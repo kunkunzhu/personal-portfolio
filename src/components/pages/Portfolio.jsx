@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import Brand from '../../images/Portfolio.png'
-import Toggle from '../Toggle'
+import Projects from '../Projects'
+{/* import Toggle from '../Toggle' */}
 
 const Hello = styled.header`
     color: #333333;
@@ -52,6 +53,7 @@ const Empathy = styled.span`
 
 const Intro = styled.div`
     height: 100vh;   
+    margin-top: 200px;
     background: url(${Brand});
     background-repeat: no-repeat;
     background-position: top;
@@ -89,7 +91,8 @@ class Portfolio extends Component{
                         technology & empathy. {/* edit */}
                     </Text>
                 </Intro>
-                <Toggle/>
+                {/* <Toggle/> */}
+                <Projects/>
             </Wrap>
         )
     }

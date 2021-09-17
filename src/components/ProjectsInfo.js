@@ -1,6 +1,6 @@
 import Brand from '../images/Portfolio.png'
 
-export default {
+const projects = {
     technova: {
         key: "technova",
         image: Brand,
@@ -21,3 +21,5 @@ export default {
         subtitle: "adafhsgk"
     }
 }
+
+export default projects;

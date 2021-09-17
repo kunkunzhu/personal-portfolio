@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import Brand from '../../images/Portfolio.png'
-import Projects from '../Projects'
-{/* import Toggle from '../Toggle' */}
+import Footer from '../Footer';
+/* import MenuBar from '../MenuBar'; */
+/* import Projects from '../Projects' */
+/* import Toggle from '../Toggle' */
 
 const Hello = styled.header`
     color: #333333;
@@ -41,7 +43,7 @@ const Text = styled.div`
     }
 `
 
-{/* const Tech = styled.span`
+/* const Tech = styled.span`
     font-family: 'Fira Code', monospace;
     background: transparent;
 `
@@ -49,11 +51,10 @@ const Text = styled.div`
 const Empathy = styled.span`
     font-family: 'Fira Code', monospace;
     background: transparent;
-` */}
+` */
 
 const Intro = styled.div`
     height: 100vh;   
-    margin-top: 200px;
     background: url(${Brand});
     background-repeat: no-repeat;
     background-position: top;
@@ -65,17 +66,26 @@ const Intro = styled.div`
     }
 `
 const Wrap = styled.div`
-    height: 80vh;
+    height: 100vh;
+    scroll-behavior: smooth;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
-    margin: auto;
+    margin: 0;
 `
 
 class Portfolio extends Component{
+
+ /*   renderMenu = () => {
+        const menuItems = [
+            { label: 'Design.', id: 'ux' },
+            { label: 'Development.', id: 'code' }];
+            var projMenu = <MenuBar menuItems={menuItems} className="menu-bar"/>
+        return projMenu
+    } */
+
     render() {
         return (
             <Wrap>
@@ -83,6 +93,7 @@ class Portfolio extends Component{
                     <Hello>
                         Hello, I am Kun.
                     </Hello>
+                {/*    {this.renderMenu()} */}
                     <Text>
                         A mathematics student <br/>
                         at the University of <br/>
@@ -92,7 +103,8 @@ class Portfolio extends Component{
                     </Text>
                 </Intro>
                 {/* <Toggle/> */}
-                <Projects/>
+                {/* <Projects/> */}
+                <Footer/>
             </Wrap>
         )
     }

@@ -1,38 +1,25 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
-import Footer from '../Footer'; 
+import Footer from '../Footer';
+import { Wrapper, Header } from './GalleryStyle'
 {/*import Scribbles from '../Scribbles'*/}
 
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    height: 100vh;
-`
-const Header = styled.div`
-    padding: 50px;
-    margin-top: 60px;
-    align-items: flex-start;
-    text-align: left;
-    line-height: 0.75;
-    font-size: 200px;
-    font-weight: 600;
-    letter-spacing: 0.02rem;
-    color: #FFFDFA;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #333333;
-    position: absolute;
-    top: 0;
-`
 
 class Gallery extends Component{
     render() {
         return (
             <Wrapper>
                 <Header>
-                make messy art & take up space.
+                    <caption>
+                        "To create is to integrate as one with the larger tapestry of art: <br/>
+                        the way a single star dances among an entire constellation, <br/>
+                        a riverstream trickles back to the vastness of the ocean, <br/>
+                        a diffraction of luminosity dissolving into the origin of light. <br/>
+                        To create is to be simultaneously miniaturized and magnified; <br />
+                        to dissipate into nothing and dissolve into wholeness with everything."
+                    </caption>
+                    <header>
+                        make messy art & take up space.
+                    </header>
                 </Header>
                 GALLERY IN PROGRESS
                 <Footer/>

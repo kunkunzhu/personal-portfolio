@@ -10,8 +10,8 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
     height: 100vh;
+    background-color: var(--bg-clr);
 `
 
 class Profile extends Component {

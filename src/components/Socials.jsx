@@ -13,7 +13,7 @@ const SocialLinks = styled.div`
     }
 `
 const Social = styled.a`
-    color: #F5BBBe;
+    color: var(--blush);
     width: 50px;
     display: flex;
     text-decoration: none;
@@ -26,7 +26,7 @@ const Social = styled.a`
         font-size: 30px;
         transform: skew(-2deg);
         transition: 0.2s ease-out;
-        text-shadow: 2px 2px 0px #A5CCE4;
+        text-shadow: 2px 2px 0px var(--rain);
     }
 `
 

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Wrap = styled.footer`
     width: 100%;
-    background-color: #F5BBBE;
+    background-color: var(--blush);
     opacity: 75%;
     border-top: 2.5px solid white;
     display: flex;
@@ -15,9 +15,9 @@ const Wrap = styled.footer`
 `
 
 const Credit = styled.div`
-    background-color: #F5BBBE;
+    background-color: var(--blush);
     font-size: 12px;
-    font-family: 'Fira Code', monospace;
+    font-family: var(--txt-font);
     color: white;
 `
 
@@ -26,7 +26,7 @@ class Footer extends Component {
         return (
             <Wrap>
                 <Credit>
-                    Designed + Coded by Kun Zhu 💙
+                    Designed + Developed by Kun Zhu 💙
                     2021
                 </Credit>
             </Wrap>

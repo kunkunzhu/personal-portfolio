@@ -1,82 +1,73 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Brand from '../images/Portfolio.png'
 
-const Container = styled.div`
+const ProjCard = styled.div`
+    background: white;
+    height: 400px;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
-    box-shadow: 5px 10px #888888;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    height: 300px;
-    border: 1px solid black;
-    padding: 0;
-`
-
-const Image = styled.img`
-    height: 100%;
-    border-radius: 30px;
-    -webkit-filter: brightness(100%);
-    &:hover {
-        -webkit-filter: brightness(80%);
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        transition: all 1s ease;
+    border: 0.5px solid #D0DEE7;
+    color: var(--txt-clr);
+    cursor: pointer;
+    .image{
+        z-index: 10;
+        height: 200px;
     }
 `
 
-const ProjectInfo = styled.div`
-
-    opacity: 0%;
-    height: 150px;
-    border-top: 0;
+const ProjInfo = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    margin: auto;
     padding: 20px;
-    &:hover {
-        opacity: 100%;
+    .title{
+        text-transform: lowercase;
+        font-size: 35px;  
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+    }
+    .subtitle{
+        font-family: var(--txt-font);
+        font-size: 18px;
+        font-style: bold;
+        font-weight: 600px;
+    }
+    .text{
+        font-family: var(--txt-font);
+        color: black;
+        padding-top: 15px;
     }
 `
 
-const ProjectDescription = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+const ProjImage = styled.div`
+    z-index: 5;
+    opacity: 1;
 `
-
-const Title = styled.div`
-    font-size: 25px;
-    font-style: bold;
-    font-weight: 600;
-    letter-spacing: 0.015rem;
-`
-
-const Subtitle = styled.div`
-    font-family: 'Fira Code', monospace;
-    font-size: 20px;
-`
-
-const Text = styled.div`
-    color: #333333;
-    padding: 10px;
-`
-
 
 class ProjectBox extends Component {
+
+    renderProjText = () => {
+        return (
+            <ProjInfo>
+                <div className="title">{this.props.project.title}</div>
+                <div className="subtitle">{this.props.project.subtitle}</div>
+                <div className="text">{this.props.project.description}</div>
+          </ProjInfo>
+        )
+    }
+
     render () {
         return (
-            <Container>
-                <Image src={this.props.project.image}/>
-                <ProjectInfo>
-                    <ProjectDescription>
-                        <Title>{this.props.title}</Title>
-                        <Subtitle>{this.props.subtitle}</Subtitle>
-                        <Text>{this.props.description}</Text>
-                    </ProjectDescription>
-                    {/* <ProjectButton/> */}
-                </ProjectInfo>
-            </Container>
+            <ProjCard>
+                <ProjImage src={this.props.project.image}/>
+                {this.renderProjText()}
+          </ProjCard>
         )
     }
 }

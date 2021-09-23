@@ -51,7 +51,7 @@ const Option = styled.div`
     display: flex;
     box-sizing: border-box;
     p {
-        font-family: 'Fira Code', monospace;
+        font-family: var(--txt-font);
         margin: auto;
         display: flex;
     }

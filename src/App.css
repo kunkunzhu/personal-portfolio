@@ -1,7 +1,18 @@
+:root {
+  /* theme colors */
+  --bg-clr: #FFFCF8;
+  --txt-clr: #333333;
+  --blush: #F5BBBE;
+  --rain: #A5CCE4;
+
+  /* theme fonts */
+  --title-font: 'Crimson Text', serif;
+  --txt-font: 'Fira Code', monospace;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Crimson Text', serif;
-  background-color: #FFFDFA;
+  font-family: var(--title-font);
 }

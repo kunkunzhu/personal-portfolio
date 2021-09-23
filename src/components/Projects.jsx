@@ -8,9 +8,10 @@ const Wrapper = styled.div`
     width: 80vw;
     min-height: 800px;
     margin: auto;
-    margin-top: 100px;
+    padding-top: 100px;
+    align-items: center;
     @media (max-width: 750px) {
-        width: 400px;
+        margin-top: -200px;
     }
 `
 

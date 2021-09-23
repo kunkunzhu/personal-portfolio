@@ -31,7 +31,7 @@ class About extends Component {
                             a Mathematics student at the University of Waterloo minoring in Cognitive Science
                         </Definition>
                         <Definition>
-                            a lover of books, the sunlight, and creative expressions of all forms.
+                            a generalist at heart, driven by creativity and curiosity.
                         </Definition>
                     </Definitions>
                 </Text>

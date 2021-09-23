@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
-import { Wrap, Intro, Text, Hello, Type } from './PortfolioStyle'
+import { Wrap, Intro, Text, Hello } from './PortfolioStyle'
 import Footer from '../Footer';
 import Projects from '../Projects'
 import Typist from 'react-typist';
@@ -12,21 +12,21 @@ const TextLoop = () => {
     }, [mounted]);
 
     return (
-        <Type>
+        <Hello>
             {mounted ? (
                 <Typist 
                     className="reason" 
                     onTypingDone={() => 
                     setMounted(false)}>
-                    <span>technology & empathy.</span>
-                    <Typist.Backspace count={21} delay={800} />
+                    <span>Hello, I'm Kun.</span>
+                    <Typist.Backspace count={15} delay={800} />
                 </Typist>
             ) : (
                 <span className="reason">
                     {"n"}
                 </span>
             )}
-        </Type>
+        </Hello>
     );
 }
 
@@ -45,16 +45,14 @@ class Portfolio extends Component{
         return (
             <Wrap>
                 <Intro>
-                    <Hello>
-                        Hello, I am Kun.
-                    </Hello>
+                    <TextLoop/>
                 {/*    {this.renderMenu()} */}
                     <Text>
                         A mathematics student <br/>
                         at the University of <br/>
                         Waterloo inspired by <br/>
                         the intersection between <br/>
-                        <TextLoop/>
+                        technology & empathy.
                     </Text>
                 </Intro>
                 {/* this.renderFilter() */} 

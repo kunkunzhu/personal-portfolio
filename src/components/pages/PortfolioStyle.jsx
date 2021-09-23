@@ -37,20 +37,6 @@ export const Text = styled.div`
         transition: 0.2s ease-out;
     }
 `
-export const Type = styled.div` 
-    text-align: left;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 1rem;
-    color: var(--txt-clr);
-    background: transparent;
-    @media (max-width: 700px) {
-        font-size: 0.8rem;
-    }
-    & span {
-        font-family: 'Fira Code', monospace;
-    }
-`/* HOW TO MAKE THIS LEFT ALIGN AH */
 
 export const Intro = styled.div`
     height: 500px;   

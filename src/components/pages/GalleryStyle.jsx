@@ -5,8 +5,6 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    height: 100vh;
     background-color: var(--bg-clr);
 `
 export const colorAnimation = keyframes`
@@ -18,6 +16,7 @@ export const colorAnimation = keyframes`
 `
 
 export const Header = styled.div`
+    width: 75vw;
     display: flex;
     flex-direction: column;
     padding: 100px;
@@ -28,7 +27,7 @@ export const Header = styled.div`
         letter-spacing: 0.2rem;
         height: 250px;
         text-align: left;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         color: var(--txt-clr);
         z-index: 1;
         &:hover {
@@ -38,7 +37,7 @@ export const Header = styled.div`
     }
     & header {
         line-height: 0.75;
-        font-size: 185px;
+        font-size: 100px;
         font-weight: 600;
         letter-spacing: 0.02rem;
         color: #FFFDFA;

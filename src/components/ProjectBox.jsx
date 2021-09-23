@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import voicenotedPic from '../images/project_thumbnails/VoicePic.png'
 
 const ProjCard = styled.div`
     background: white;
@@ -13,8 +14,10 @@ const ProjCard = styled.div`
     color: var(--txt-clr);
     cursor: pointer;
     .image{
-        z-index: 10;
         height: 200px;
+    }
+    @media (max-width: 850px) {
+        width: 400px;
     }
 `
 
@@ -46,7 +49,7 @@ const ProjInfo = styled.div`
 `
 
 const ProjImage = styled.div`
-    z-index: 5;
+    z-index: -5;
     opacity: 1;
 `
 
@@ -63,11 +66,15 @@ class ProjectBox extends Component {
     }
 
     render () {
+
         return (
+            <div>
+                <image src={this.props.project.image}/>
             <ProjCard>
-                <ProjImage src={this.props.project.image}/>
+                
                 {this.renderProjText()}
-          </ProjCard>
+            </ProjCard>
+            </div>
         )
     }
 }

@@ -1,35 +1,37 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import voicenotedPic from '../images/project_thumbnails/VoicePic.png'
+import { Card } from 'react-bootstrap'
 
-const ProjCard = styled.div`
+const ProjCard = styled(Card)`
     background: white;
-    height: 400px;
+    height: 550px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 15px;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    border: 0.5px solid #D0DEE7;
     color: var(--txt-clr);
     cursor: pointer;
-    .image{
-        height: 200px;
-    }
     @media (max-width: 850px) {
         width: 400px;
     }
+    &:hover {
+        transition: 0.5s ease-out; 
+        background: #1A3A4F;
+        color: white;
+    }
 `
 
-const ProjInfo = styled.div`
+const ProjInfo = styled(Card.Body)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     width: 400px;
     margin: auto;
     padding: 20px;
     .title{
+        opacity: 0.5;
         text-transform: lowercase;
         font-size: 35px;  
         letter-spacing: 0.1rem;
@@ -42,15 +44,18 @@ const ProjInfo = styled.div`
         font-weight: 600px;
     }
     .text{
+        opacity: 0.5;
         font-family: var(--txt-font);
-        color: black;
         padding-top: 15px;
     }
 `
 
-const ProjImage = styled.div`
-    z-index: -5;
+const ProjImage = styled(Card.Img)`
+    border-radius: 15px;
+    margin-top: 15px;
+    z-index: 5;
     opacity: 1;
+    width: 540px;
 `
 
 class ProjectBox extends Component {
@@ -61,20 +66,17 @@ class ProjectBox extends Component {
                 <div className="title">{this.props.project.title}</div>
                 <div className="subtitle">{this.props.project.subtitle}</div>
                 <div className="text">{this.props.project.description}</div>
-          </ProjInfo>
+            </ProjInfo>
         )
     }
 
     render () {
 
         return (
-            <div>
-                <image src={this.props.project.image}/>
-            <ProjCard>
-                
+            <ProjCard >
+                <ProjImage src={this.props.project.image}/>
                 {this.renderProjText()}
             </ProjCard>
-            </div>
         )
     }
 }

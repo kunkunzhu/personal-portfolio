@@ -7,7 +7,7 @@ const projects = {
         key: "technova",
         image: technovaPic,
         title: "Hack with Us",
-        color: "#D0DEE7",
+        color: "#FFFBFB",
         subtitle: "TechNova",
         description: "Innovating the design for UWaterloo's first women+ in tech hackathon.",
         categories: "Branding, UX Design"
@@ -16,7 +16,7 @@ const projects = {
         key: "brand",
         image: brandPic,
         description: "halo",
-        color: "#FFFBFB",
+        color: "#D0DEE7",
         title: "Personal Portfolio",
         subtitle: "hehe",
         categories: "UX Design, Frontend Development"
@@ -25,7 +25,7 @@ const projects = {
         key: "voicenoted",
         image: voicenotedPic,
         title: 'voicenoted.',
-        color: "FFE3DC",
+        color: "#FFE3DC",
         subtitle: 'Hack the North 2021 Finalist',
         description: "Reinventing the podcast experience through notetaking functionality. ",
         categories: "UX Design, Frontend Development"

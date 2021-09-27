@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap'
 
 const ProjCard = styled(Card)`
     background: white;
-    height: 550px;
+    height: 510px;
     display: flex;
     border-radius: 15px;
     flex-direction: column;
@@ -17,25 +17,42 @@ const ProjCard = styled(Card)`
     }
     &:hover {
         transition: 0.5s ease-out; 
-        background: #1A3A4F;
+        background: #183550;
         color: white;
     }
 `
 
-const ProjInfo = styled(Card.Body)`
+
+const ProjInfo = styled(Card.ImgOverlay)`
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    width: 400px;
-    margin: auto;
+    width: 500px;
     padding: 20px;
-    .title{
-        opacity: 0.5;
+    .title {
         text-transform: lowercase;
         font-size: 35px;  
         letter-spacing: 0.1rem;
         font-weight: 600;
+        .arrow{
+            color: white;
+            font-size: 25px;
+            margin-right: 20px;
+            float: right;
+            &:hover {
+                transform: translate(0.5em,0);
+                transition: 0.3s ease-out; 
+            }
+        }
+    }
+    hr {
+        color: white;
+        border: 0;
+        border-bottom: 1px dashed white;
+        height: 0;
+        margin-bottom: 10px;
+        width: 90%;
     }
     .subtitle{
         font-family: var(--txt-font);
@@ -46,16 +63,16 @@ const ProjInfo = styled(Card.Body)`
     .text{
         opacity: 0.5;
         font-family: var(--txt-font);
-        padding-top: 15px;
+        padding-top: 5px;
     }
 `
 
 const ProjImage = styled(Card.Img)`
-    border-radius: 15px;
+    border-radius: 20px;
     margin-top: 15px;
     z-index: 5;
     opacity: 1;
-    width: 540px;
+    width: 500px;
 `
 
 class ProjectBox extends Component {
@@ -63,7 +80,14 @@ class ProjectBox extends Component {
     renderProjText = () => {
         return (
             <ProjInfo>
-                <div className="title">{this.props.project.title}</div>
+                <div className="title">
+                    {this.props.project.title}
+                    &nbsp;
+                    <span className="arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+                <hr/>
                 <div className="subtitle">{this.props.project.subtitle}</div>
                 <div className="text">{this.props.project.description}</div>
             </ProjInfo>

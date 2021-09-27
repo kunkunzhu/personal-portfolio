@@ -32,7 +32,7 @@ class Projects extends Component {
         return (
             <Wrapper>
                 <StackGrid 
-                    columnWidth={575} 
+                    columnWidth={550} 
                     gutterWidth={15} 
                     gutterHeight={25} 
                     easing={"cubicIn"}>

@@ -5,7 +5,7 @@ import voicenotedPic from '../images/project_thumbnails/VoicePic.png'
 const projects = {
     technova: {
         key: "technova",
-        image: technovaPic,
+        image: "../images/project_thumbnails/TechnovaPic.png",
         title: "Hack with Us",
         color: "#FFFBFB",
         subtitle: "TechNova",

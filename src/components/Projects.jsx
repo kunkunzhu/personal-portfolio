@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import StackGrid from 'react-stack-grid'
+import { Masonry } from './ProjectsStyle.jsx'
 import ProjectsInfo from './ProjectsInfo'
 import ProjectBox from './ProjectBox'
 
 const Wrapper = styled.div`
-    width: 80vw;
-    min-height: 800px;
     margin: auto;
     padding-top: 100px;
+    width: 100%;
     align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
     @media (max-width: 750px) {
         margin-top: -200px;
     }
@@ -18,8 +19,8 @@ const Wrapper = styled.div`
 class Projects extends Component {
     renderProjectCells = () => {
         const projects = ['voicenoted', 'technova', 'brand']
-        var projectArray = []
-        for(var i = 0; i < projects.length; i++) {
+        let projectArray = []
+        for(let i = 0; i < projects.length; i++) {
             const project = ProjectsInfo[projects[i]]
             projectArray.push(
                 <ProjectBox project={project}/>
@@ -31,13 +32,9 @@ class Projects extends Component {
     render () {
         return (
             <Wrapper>
-                <StackGrid 
-                    columnWidth={550} 
-                    gutterWidth={15} 
-                    gutterHeight={25} 
-                    easing={"cubicIn"}>
+                <Masonry>
                     {this.renderProjectCells()}
-                </StackGrid>
+                </Masonry>
             </Wrapper>
         )
     }

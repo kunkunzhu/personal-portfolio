@@ -1,78 +1,58 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Card } from 'react-bootstrap'
 
-const ProjCard = styled(Card)`
-    background: white;
-    height: 510px;
-    display: flex;
+const ProjCard = styled.div`
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    padding: 4rem;
     border-radius: 15px;
-    flex-direction: column;
-    align-items: center;
     box-sizing: border-box;
     color: var(--txt-clr);
     cursor: pointer;
-    @media (max-width: 850px) {
-        width: 400px;
-    }
-    &:hover {
-        transition: 0.5s ease-out; 
-        background: #183550;
-        color: white;
-    }
 `
 
 
-const ProjInfo = styled(Card.ImgOverlay)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 500px;
+const ProjInfo = styled.div`
     padding: 20px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .title {
         text-transform: lowercase;
-        font-size: 35px;  
+        font-size: 2.2rem;  
         letter-spacing: 0.1rem;
         font-weight: 600;
-        .arrow{
-            color: white;
-            font-size: 25px;
-            margin-right: 20px;
-            float: right;
-            &:hover {
-                transform: translate(0.5em,0);
-                transition: 0.3s ease-out; 
-            }
-        }
-    }
-    hr {
-        color: white;
-        border: 0;
-        border-bottom: 1px dashed white;
-        height: 0;
-        margin-bottom: 10px;
-        width: 90%;
     }
     .subtitle{
         font-family: var(--txt-font);
-        font-size: 18px;
+        font-size: 1rem;
         font-style: bold;
         font-weight: 600px;
+        flex: 0 0 auto;
     }
     .text{
-        opacity: 0.5;
         font-family: var(--txt-font);
-        padding-top: 5px;
+        position: relative;
+        height: 1.5rem;
+        overflow: hidden;
     }
 `
 
-const ProjImage = styled(Card.Img)`
-    border-radius: 20px;
-    margin-top: 15px;
-    z-index: 5;
-    opacity: 1;
-    width: 500px;
+const ProjImage = styled.a`
+    width: 100%;
+    padding-top: 50%;
+    display: inline-block;
+    background-position: 50% 0;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url(../images/project_thumbnails/TechnovaPic.png);
 `
 
 class ProjectBox extends Component {
@@ -80,15 +60,10 @@ class ProjectBox extends Component {
     renderProjText = () => {
         return (
             <ProjInfo>
-                <div className="title">
-                    {this.props.project.title}
-                    &nbsp;
-                    <span className="arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </span>
+                <div className="header">
+                    <div className="title">{this.props.project.title}</div>
+                    <div className="subtitle">{this.props.project.subtitle}</div>
                 </div>
-                <hr/>
-                <div className="subtitle">{this.props.project.subtitle}</div>
                 <div className="text">{this.props.project.description}</div>
             </ProjInfo>
         )
@@ -98,7 +73,7 @@ class ProjectBox extends Component {
 
         return (
             <ProjCard >
-                <ProjImage src={this.props.project.image}/>
+                <ProjImage href="#"/>
                 {this.renderProjText()}
             </ProjCard>
         )

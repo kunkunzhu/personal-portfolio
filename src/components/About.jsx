@@ -25,13 +25,13 @@ class About extends Component {
                     <Noun>Noun</Noun>
                     <Definitions>
                         <Definition>
-                            an aspiring frontend developer and UX designer interning at <Coop href={"https://www.e-butterfly.org/"} target='_blank' rel='noreferrer'>eButterfly</Coop>
+                            an aspiring creative technologist, currently interning at <Coop href={"https://www.e-butterfly.org/"} target='_blank' rel='noreferrer'>eButterfly</Coop>
                         </Definition>
                         <Definition>
                             a Mathematics student at the University of Waterloo minoring in Cognitive Science
                         </Definition>
                         <Definition>
-                            a generalist at heart, driven by creativity and curiosity.
+                            an artist at heart, driven by creativity and curiosity.
                         </Definition>
                     </Definitions>
                 </Text>

@@ -76,18 +76,14 @@ export const GalleryTabs = styled(Tabs)`
         font-family: var(--txt-font);
         text-align: -webkit-match-parent;
         &:hover {
-            text-decoration: underline;
-            text-decoration-color: var(--rain);
-            text-decoration-style: wavy;
-            background: white;
             color: var(--blush);
         }
-        &>.active {
-            text-decoration: underline;
-            text-decoration-color: var(--rain);
-            text-decoration-style: wavy;
-            background: white;
-        }
+    }
+    .active {
+        text-decoration: underline;
+        text-decoration-color: var(--rain);
+        text-decoration-style: wavy;
+        background: white;
     }
 `
 

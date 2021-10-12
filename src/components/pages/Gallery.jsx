@@ -89,12 +89,20 @@ class Gallery extends Component{
                 <div>
                     <GalleryTabs activeKey={this.state.activeTab} onSelect={this.handleSelect}>
                         {/* why is tab rendering logic not working? */}
-                        <Tab eventKey='fullGallery' title="compilation./" tabClassName="tab">
+                        <Tab 
+                        eventKey='fullGallery' 
+                        title="compilation./" 
+                        tabClassName="tab" 
+                        activeClassName="active">
                             <Masonry>
                                 {this.renderGalleryDisplay()} 
                             </Masonry> 
                         </Tab>
-                        <Tab eventKey='pagedProjects' title="stories./" tabClassName="tab">
+                        <Tab 
+                        eventKey='pagedProjects' 
+                        title="stories./" 
+                        tabClassName="tab" 
+                        activeClassName="active">
                             <Masonry>
                                 {this.renderPagedDisplay()}
                             </Masonry> 

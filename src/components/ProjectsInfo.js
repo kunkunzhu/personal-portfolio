@@ -7,7 +7,8 @@ const projects = {
         subtitle: "TechNova",
         description: "Innovating the design for UWaterloo's first women+ in tech hackathon.",
         categories: "Branding, UX Design",
-        prompt: "behind the scene."
+        prompt: "behind the scene.",
+        path: '/portfolio/technova'
     },
     brand: {
         key: "brand",
@@ -17,7 +18,8 @@ const projects = {
         title: "Personal Portfolio",
         subtitle: "hehe",
         categories: "UX Design, Frontend Development",
-        prompt: "case study."
+        prompt: "case study.",
+        path: '/portfolio/mood'
     },
     voicenoted: {
         key: "voicenoted",
@@ -27,7 +29,8 @@ const projects = {
         subtitle: 'Hack the North 2021 Finalist',
         description: "Reinventing the podcast experience through notetaking functionality. ",
         categories: "UX Design, Frontend Development",
-        prompt: "case study."
+        prompt: "case study.",
+        path: '/portfolio/voicenoted'
     }
 }
 

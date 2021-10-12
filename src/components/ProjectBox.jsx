@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 
 const ProjCard = styled.div`
     height: 400px;
@@ -70,10 +71,7 @@ const ProjInfo = styled.div`
         .link {
             cursor: crosshair;
             margin-top: 1.75rem;
-            font-family: inherit;
-            color: var(--blush);
             flex: 0 0 auto;
-            font-size: 1.1rem;
             align-self: flex-start;
             border-radius: 20px;
             border: 1px solid var(--blush);
@@ -82,9 +80,13 @@ const ProjInfo = styled.div`
             padding-left: 1rem;
             padding-right: 1rem;
             background: inherit;
+            color: var(--blush);
+            text-decoration: none;
+            font-family: inherit;
+            font-size: 1.1rem;
             &:hover {
-                background: var(--blush);
                 color: white;
+                background: var(--blush);
                 border: none; 
                 box-shadow: 0 0 15px 0 var(--rain);
                 transition: 0.1s ease-out; 
@@ -99,7 +101,7 @@ const ProjText = styled.div`
     overflow: collapse;
 `
 
-const ProjImage = styled.a`
+const ProjImage = styled.div`
     width: 100%;
     padding-top: 50%;
     display: inline-block;
@@ -128,9 +130,11 @@ class ProjectBox extends Component {
                     <span className="categories">
                         /{this.props.project.categories}/
                     </span>
-                    <button className="link" href="#">
-                        {this.props.project.prompt}
-                    </button>
+                    <Link to={this.props.project.path} style={{fontFamily: "var(--txt-font)"}}>
+                        <button className="link">
+                            {this.props.project.prompt}
+                        </button>
+                    </Link>
                 </div>
             </ProjInfo>
         )
@@ -140,7 +144,7 @@ class ProjectBox extends Component {
 
         return (
             <ProjCard >
-                <ProjImage className="image" href="#" image={this.props.project.image}/>
+                <ProjImage className="image" image={this.props.project.image}/>
                 {this.renderProjText()}
             </ProjCard>
         )

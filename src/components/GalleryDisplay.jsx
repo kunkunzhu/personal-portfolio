@@ -77,7 +77,7 @@ class GalleryDisplay extends Component {
                         </Modal.Title>
                     </Modal.Footer>
                     </ModalCard>
-                                    </>
+                </>
             )
         }
     }

@@ -140,5 +140,6 @@ export const Coop = styled.a`
     &:hover{
         color: var(--rain);
         text-decoration: underline;
+        text-decoration-style: wavy;
     }
 `

@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     color: var(--txt-clr);
-    background-color: #FFFAF3;
     box-sizing: border-box;
 `
 
@@ -25,7 +24,7 @@ export const Home = styled(Link)`
 /* HEADER STYLE */
 
 export const Hero = styled.img`
-    height: 20rem;
+    height: 25rem;
     width: auto;
 `
 
@@ -69,7 +68,6 @@ export const Summary = styled.header`
     align-items: center;
     justify-content: center;
     margin: 0 auto 2rem auto;
-    background-image: linear-gradient(to bottom, #ffffff, #fffdff, #fffcfc, #fffaf8, #fffaf3);
 `
 
 /* CONTENT STYLE */
@@ -84,6 +82,7 @@ export const Paragraph = styled.div`
     margin-right: auto;
     margin-left: auto;
     float: center;
+    letter-spacing: 0.01rem;
     .subheading {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -98,6 +97,16 @@ export const Paragraph = styled.div`
         text-transform: uppercase;
         color: var(--blush);
         opacity: 0.75;
+    }
+    .quote {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: var(--bg-clr);
+        background-color: var(--rain);
+        padding: 15px;
+        padding-left: 50px;
     }
     .paragraph {
         font-family: var(--txt-font);

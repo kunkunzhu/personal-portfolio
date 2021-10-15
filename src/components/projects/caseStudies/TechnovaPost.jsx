@@ -17,48 +17,51 @@ import Footer from '../../Footer'
 class TechnovaPost extends Component {
     render() {
         return (
-            <Wrapper>
+            <Wrapper
+            style={{backgroundColor: "#FFFAF3"}}>
                 <Home to="/portfolio">
                     <i class="fas fa-arrow-circle-left"></i>
                 </Home>
-                <Summary>
+                <Summary 
+                style={{backgroundImage: "linear-gradient(to bottom, #ffffff, #fffdff, #fffcfc, #fffaf8, #fffaf3)"}}>
                     <Hero src="https://i.ibb.co/1ddn0L6/Hero.png"/>
                     <Title>Technova's Hack with Us</Title>
                     <Subtitle>Innovating the design for UWaterloo's first women+ in tech hackathon.</Subtitle>
-                    <div style={{width: "50%"}}>
-                        <Nutshell responsive>
-                            <thead>
-                                <tr>
-                                    <th><i class="far fa-calendar-alt"></i></th>
-                                    <th><i class="fas fa-toolbox"></i></th>
-                                    <th><i class="fas fa-tools"></i></th>
-                                    <th><i class="fas fa-user-friends"></i></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>April - </td>
-                                    <td>Branding</td>
-                                    <td>Figma</td>
-                                    <td>6 designers</td>
-                                </tr>
-                                <tr>
-                                    <td> August 2021</td>
-                                    <td>UX Prototyping</td>
-                                    <td></td>
-                                    <td>(20 organizers)</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Visual Design</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </Nutshell>
-                    </div>
+                    <Nutshell responsive>
+                        <thead>
+                            <tr>
+                                <th><i class="far fa-calendar-alt"></i></th>
+                                <th><i class="fas fa-toolbox"></i></th>
+                                <th><i class="fas fa-tools"></i></th>
+                                <th><i class="fas fa-user-friends"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>April - </td>
+                                <td>Branding</td>
+                                <td>Figma</td>
+                                <td>6 designers</td>
+                            </tr>
+                            <tr>
+                                <td>August 2021</td>
+                                <td>UX Design</td>
+                                <td></td>
+                                <td>(20 organizers)</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Visual Design</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </Nutshell>
                     </Summary>
                     <Section>
+                        <Paragraph>
+                            <hr className="subdivider"/>
+                        </Paragraph>
                         <Heading>Context ⭐</Heading>
                         <Paragraph>
                             <div className="paragraph">
@@ -78,12 +81,12 @@ class TechnovaPost extends Component {
                         <Paragraph>
                             <h5 className="subheading">1. Branding + Style Guide</h5>
                             <div className="paragraph">
-                                Creating the brand he first thing that the design team was tasked with. 
+                                Creating the brand is the first thing that the design team was tasked with. 
                                 More specifically, we wanted to establish the logo, colours, and typography 
                                 that will represent our organization. As an inaugural event, these initial 
                                 branding decisions will critically impact how TechNova will be perceived as 
                                 an organization. As a team, we spent many hours brainstorming and exchanging 
-                                feedbacks. <br/>
+                                feedbacks. 
                             </div>
                             <img 
                             src="https://i.ibb.co/jVP2Drm/1-ideations.png" 
@@ -135,10 +138,8 @@ class TechnovaPost extends Component {
                                 of the hackers and ensure that they can find the information they need with ease. This is 
                                 reflected in the top-to-bottom hierachy of the webpage.
                             </div>
-                            <div className="imgRow">
-                                <img src="https://i.ibb.co/RjbNsWf/2-navbar.png" alt="nav bar" className="smallerDisplay"/>
-                                <img src="https://i.ibb.co/qmVDXXz/2-userjourney.png" alt="hacker user journey" className="smallerDisplay"/>
-                            </div>
+                            <img src="https://i.ibb.co/RjbNsWf/2-navbar.png" alt="nav bar" className="smallerDisplay"/>
+                            <img src="https://i.ibb.co/qmVDXXz/2-userjourney.png" alt="hacker user journey" className="smallerDisplay"/>
                             <h6 className="subsubheading">Landing Page</h6>
                             <div className="paragraph">
                                 As the first thing the user sees upon visiting the website, our landing page serves 
@@ -152,10 +153,8 @@ class TechnovaPost extends Component {
                                 Through this process, I learned that <b> what is aesthetic may not always be the most accessible</b>, 
                                 and it is always important to ensure that the design is in alignment with the brand.
                             </div>
-                            <div className="imgRow">
-                                <img src="https://i.ibb.co/DMFF2Kq/2-landing2.png" alt="landing page initial design" className="smallerDisplay"/>
-                                <img src="https://i.ibb.co/g7tfS7f/2-landing.png" alt="landing page final design" className="smallerDisplay"/>
-                            </div>
+                            <img src="https://i.ibb.co/DMFF2Kq/2-landing2.png" alt="landing page initial design" className="smallerDisplay"/>
+                            <img src="https://i.ibb.co/g7tfS7f/2-landing.png" alt="landing page final design" className="smallerDisplay"/>
                             <div className="paragraph">
                                 In order to create a more accesible viewing experience, we also included a toggle bar to 
                                 allow the user to shift between light and dark mode!
@@ -169,10 +168,8 @@ class TechnovaPost extends Component {
                                 the UI, we decided on a concise layout and a progress bar that gamified the user experience 
                                 in order to encourage the user to view through each different story.
                             </div>
-                            <div className="imgRow">
-                                <img src="https://i.ibb.co/zQ0CR3f/2-ourstory.png" alt="testimonial section initial design" className="smallerDisplay"/>
-                                <img src="https://i.ibb.co/K9Sgf0D/2-ourstory1.png" alt="testimonial section final design" className="smallerDisplay"/>
-                            </div>
+                            <img src="https://i.ibb.co/zQ0CR3f/2-ourstory.png" alt="testimonial section initial design" className="smallerDisplay"/>
+                            <img src="https://i.ibb.co/K9Sgf0D/2-ourstory1.png" alt="testimonial section final design" className="smallerDisplay"/>
                             <div className="paragraph">
                                 After numerous iterations on Figma, we handed the hi-fidelity wireframes off to the dev team, 
                                 who made the design come to life through code ✨👀

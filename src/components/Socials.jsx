@@ -46,6 +46,9 @@ class Socials extends Component {
                 <Social href={'https://www.linkedin.com/in/kun-zhu-05b53a193/'} target='_blank' rel='noreferrer'>
                         <i className='fab fa-linkedin'></i>
                 </Social>
+                <Social href={'https://open.spotify.com/user/eliinaz.z?si=e8297252e4484e82'} target='_blank' rel='noreferrer'>
+                    <i className='fab fa-spotify'></i>
+                </Social>
             </SocialLinks>
         )
     }

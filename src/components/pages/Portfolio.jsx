@@ -4,7 +4,7 @@ import TechnovaPost from '../projects/caseStudies/TechnovaPost';
 import VoicenotedPost from '../projects/caseStudies/VoicenotedPost';
 import PortfolioHome from './PortfolioHome'
 
-class Portfolio extends Component{
+class Portfolio extends Component {
 
     render() {
         return (

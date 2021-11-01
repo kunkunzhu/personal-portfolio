@@ -1,57 +1,32 @@
-import React, { Component, useState, useEffect } from 'react';
-import Footer from '../Footer'; 
-import Typist from 'react-typist';
-import { Wrapper, Header, Type } from './JournalStyle'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import JournalHome from './JournalHome';
+/* importation of journal posts */
+import PastimesJournal from '../journal/journalPosts/PastimesJournal'
+import IDontWantToBeAnyoneElseJournal from '../journal/journalPosts/IDontWantToBeAnyoneElseJournal'
+import Reopening2Journal from '../journal/journalPosts/Reopening2Journal';
+import AugTOTripJournal from '../journal/journalPosts/AugTOTripJournal';
+import Bday20Journal from '../journal/journalPosts/Bday20Journal';
+import Reopening1Journal from '../journal/journalPosts/Reopening1Journal';
+import DaylightJournal from '../journal/journalPosts/DaylightJournal';
+import MathIdentityJournal from '../journal/journalPosts/MathIdentityJournal';
 
-
-const TextLoop = () => {
-    const[mounted, setMounted] = useState(true);
-
-    useEffect(() => {
-        setMounted(true);
-    }, [mounted]);
-
-    return (
-        <Type>
-            {mounted ? (
-                <Typist 
-                    className="reason" 
-                    onTypingDone={() =>
-                    setMounted(false)}>
-                    <span>reflect.</span>
-                    <Typist.Backspace count={8} delay={1000} />
-                    <span>become.</span>
-                    <Typist.Backspace count={7} delay={1000} />
-                    <span>cherish.</span>
-                    <Typist.Backspace count={8} delay={1000} />
-                    <span>understand.</span>
-                    <Typist.Backspace count={11} delay={1000} />
-                    <span>remember.</span>
-                    <Typist.Backspace count={9} delay={1000} />
-                </Typist>
-                ) : (
-                    <span className="reason">
-                        {"n"}
-                    </span>
-                    )}
-        </Type>
-        );
-    }
-
-class Journal extends Component{
-
+class Journal extends Component {
     render() {
         return (
-            <Wrapper>
-                <Header>
-                    <div className="precursor">
-                        I write to &nbsp;
-                    </div>
-                   <TextLoop/>
-                </Header>
-                JOURNAL IN PROGRESS
-                <Footer/>
-            </Wrapper>
+            <Router>
+                <Switch>
+                    <Route path='/journal' exact component={JournalHome}/>
+                    <Route path='/journal/pastimes' component={PastimesJournal}/>
+                    <Route path='/journal/idontwanttobeanyoneelsebutmyselfanymore' component={IDontWantToBeAnyoneElseJournal}/>
+                    <Route path='/journal/reopening2' component={Reopening2Journal}/>
+                    <Route path='/journal/torontotrip1' component={AugTOTripJournal}/>
+                    <Route path='/journal/twenty' component={Bday20Journal}/>
+                    <Route path='/journal/reopening1' component={Reopening1Journal}/>
+                    <Route path='/journal/daylight' component={DaylightJournal}/>
+                    <Route path='/journal/amathematicalidentitycrisis' component={MathIdentityJournal}/>
+                </Switch>
+            </Router>
         )
     }
 }

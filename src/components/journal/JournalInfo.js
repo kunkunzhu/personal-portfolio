@@ -1,0 +1,68 @@
+const posts = {
+    amathematicalidentitycrisis: {
+        key: "amathematicalidentitycrisis",
+        date: "03/27/2021",
+        image: "https://i.ibb.co/PxfVBTZ/math.jpg",
+        title: "a mathematical identity (crisis).",
+        path: "/journal/amathematicalidentitycrisis",
+        excerpt: "perhaps she is best defined as one that is constantly evolving, perpetually shifting – metamorphosing a multitude of times to converge towards who she is meant to be.",
+    },
+    daylight: {
+        key: "daylight",
+        date: "02/05/2021",
+        image: "https://i.ibb.co/4t53wXz/daylight.jpg",
+        title: "daylight /",
+        path: "/journal/daylight",
+        excerpt: "What does strength mean to you? She asks and I respond: daylight.",
+    },
+    reopening1: {
+        key: "reopening1",
+        date: "06/22/2021",
+        image: "https://i.ibb.co/7tLbsD5/stage1reopening.jpg",
+        title: ":stage 1 reopening.",
+        path: "/journal/reopening1",
+        excerpt: "When was the last time you felt inspired and reinvigorated from the physical space around you?",
+    },
+    twenty: {
+        key: "twenty",
+        date: "07/31/2021",
+        image: "https://i.ibb.co/cJShJRL/20thbday.jpg",
+        title: "20th birthday.",
+        path: "/journal/twenty",
+        excerpt: "May I gather the courage to grow, along a path where confidence blossom forth like wildflowers and healing pours in like the daylight. ",
+    },
+    torontotrip1: {
+        key: "torontotrip1",
+        date: "08/31/2021",
+        image: "https://i.ibb.co/kHKZcKh/toronto2.jpg",
+        title: ":end-of-summer toronto trip.",
+        path: "/journal/torontotrip1",
+        excerpt: "Miscellaneous accidents and serendipities unfold as though they have been predestined in the plotline, yet this spontaneity is at the very soul of adventure.",
+    },
+    reopening2: {
+        key: "reopening2",
+        date: "09/10/2021",
+        image: "https://i.ibb.co/d2bYShc/ago.jpg",
+        title: ":stage 2 reopening /",
+        path: "/journal/reopening2",
+        excerpt: "here comes the first time after a long time.",
+    },
+    pastimes: {
+        key: "pastimes",
+        date: "10/22/2021",
+        image: "https://i.ibb.co/2KZjfx9/e4af9a39-5eda-4a99-8a6a-1568d99de602.jpg",
+        title: "go where you encounter peace.",
+        path: "/journal/pastimes",
+        excerpt: "For a brief moment, I begin to wonder if I have been neglecting what's the most meaningful to me to gather dust on the back shelf of my to-do list instead.",
+    },
+    idontwanttobeanyoneelsebutmyselfanymore: {
+        key: "idontwanttobeanyoneelsebutmyselfanymore",
+        date: "09/20/2021",
+        image: "https://i.ibb.co/bRbS8RT/IMG-20210924-181601.jpg",
+        title: "i don't want to be anyone else but myself anymore.",
+        path: "/journal/idontwanttobeanyoneelsebutmyselfanymore",
+        excerpt: "how I long to re-awaken and come vividly alive to this ordinary and unprecedented life — to the unique array of things that contain meaning to me.",
+    },
+}
+
+export default posts;

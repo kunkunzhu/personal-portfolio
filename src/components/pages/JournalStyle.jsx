@@ -1,13 +1,10 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: var(--bg-clr);
 `
 
 
@@ -17,7 +14,8 @@ export const Header = styled.header`
     flex-direction: column;
     position: relative;
     left: -200px;
-    top: -20px;
+    padding: 5rem;
+    margin-bottom: 5rem;
     font-weight: 1200;
     font-size: 85px;
     .precursor {
@@ -46,3 +44,13 @@ export const Type = styled.div`
         font-family: var(--txt-font);
     }
 `
+
+export const Masonry = styled.div`
+    column-count: 3;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+`
+// add responsive to masonry

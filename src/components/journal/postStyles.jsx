@@ -135,11 +135,11 @@ export class FooterBar extends React.Component {
     render() {
         return (
             <BarWrapper>
-                {this.props.previous ? 
-                    <Link className="link" to={this.props.previous.path}>
-                        <div className="path">previous.</div>
+                {this.props.next ? 
+                    <Link className="link" to={this.props.next.path}>
+                        <div className="path">next.</div>
                         <div className="title">
-                            {this.props.previous.title}
+                            {this.props.next.title}
                         </div>
                     </Link>
                     : null
@@ -147,11 +147,11 @@ export class FooterBar extends React.Component {
                 <Link className="link" to='/journal'>
                     <div className="path">posts</div>
                 </Link>
-                {this.props.next ? 
-                    <Link className="link" to={this.props.next.path}>
-                        <div className="path">next.</div>
+                {this.props.previous ? 
+                    <Link className="link" to={this.props.previous.path}>
+                        <div className="path">previous.</div>
                         <div className="title">
-                            {this.props.next.title}
+                            {this.props.previous.title}
                         </div>
                     </Link>
                     : null

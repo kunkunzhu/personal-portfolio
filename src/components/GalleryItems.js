@@ -15,49 +15,49 @@ const drawings = {
         image: daisyGirl,
         title: "daisy.",
         date: "2020",
-        pages: false
+        pages: "0"
     },
     fish_girl: {
         key: "fish_girl",
         image: fishGirl,
         title: "river child.",
         date: "2020",
-        pages: false
+        pages: "0"
     },
     floral_girl: {
         key: "floral_girl",
         image: floralGirl,
         title: "botanical girl.",
         date: "2020",
-        pages: false
+        pages: "0"
     },
     frowny_girl: {
         key: "frowny_girl",
         image: frownyGirl,
         title: "moody.",
         date: "2020",
-        pages: false
+        pages: "0"
     },
     boba_girl: {
         key: "boba_girl",
         image: sunflowerBoba,
         title: "boba + sunlight.",
         date: "2020",
-        pages: false
+        pages: "0"
     },
     tea_moon: {
         key: "tea_moon",
         image: teaMoon,
         title: "evening reflection.",
         date: "2020",
-        pages: false
+        pages: "0"
     },
     quarantine_portraits: {
         key: "quarantine_portraits",
         image: quarantinePortraits,
         title: "Quarantine Portraits",
         date: "March 2021",
-        pages: true
+        pages: "https://www.behance.net/gallery/115589757/Pandemic-Portraits-a-quarantine-project"
     }
 }
 

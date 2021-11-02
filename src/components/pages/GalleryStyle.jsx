@@ -24,7 +24,7 @@ export const Header = styled.div`
     flex-direction: column;
     padding: 100px;
     margin-top: 50px;
-    & caption {
+    & div {
         padding-left: 25px;
         opacity: 0;
         letter-spacing: 0.2rem;
@@ -141,7 +141,7 @@ export const Visual = styled.img`
     }
 `
 
-export const VisualCard = styled.div`
+export const VisualCard = styled.a`
     display: inline-block;
     background: var(--bg-clr);
     padding: 4px;

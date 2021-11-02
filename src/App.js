@@ -6,8 +6,6 @@ import Portfolio from './components/pages/Portfolio';
 import Journal from './components/pages/Journal';
 import Gallery from './components/pages/Gallery';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-{/* import Gallery from './components/pages/Gallery';
-import Journal from './components/pages/Journal'; */}
 
 function App() {
   return (

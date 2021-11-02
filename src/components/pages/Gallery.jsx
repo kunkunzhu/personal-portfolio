@@ -13,14 +13,14 @@ import { Tab } from 'react-bootstrap'
 const Landing = () => {
     return (
         <Header>
-            <caption>
+            <div>
                 "To create is to integrate as one with the larger tapestry of art: <br/>
                 the way a single star dances among an entire constellation, <br/>
                 a riverstream trickles back to the vastness of the ocean, <br/>
                 a diffraction of luminosity dissolving into the origin of light. <br/>
                 To create is to be simultaneously miniaturized and magnified; <br />
                 to dissipate into nothing and dissolve into wholeness with everything."
-            </caption>
+            </div>
             <header>
                 make messy art <br/> & take up space.
             </header>

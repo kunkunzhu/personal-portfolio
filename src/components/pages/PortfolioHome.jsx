@@ -32,21 +32,11 @@ const TextLoop = () => {
 
 
 class PortfolioHome extends Component{
-
- /*   renderMenu = () => {
-        const menuItems = [
-            { label: 'Design.', id: 'ux' },
-            { label: 'Development.', id: 'code' }];
-            var projMenu = <MenuBar menuItems={menuItems} className="menu-bar"/>
-        return projMenu
-    } */
-
     render() {
         return (
             <Wrap>
                 <Intro>
                     <TextLoop/>
-                {/*    {this.renderMenu()} */}
                     <Text>
                         A mathematics student <br/>
                         at the University of <br/>
@@ -55,7 +45,6 @@ class PortfolioHome extends Component{
                         technology & empathy.
                     </Text>
                 </Intro>
-                {/* this.renderFilter() */} 
                 <Projects/>
                 <Footer/>
             </Wrap>

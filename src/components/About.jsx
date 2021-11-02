@@ -25,10 +25,10 @@ class About extends Component {
                     <Noun>Noun</Noun>
                     <Definitions>
                         <Definition>
-                            an aspiring creative technologist, currently interning at <Coop href={"https://www.e-butterfly.org/"} target='_blank' rel='noreferrer'>eButterfly</Coop>
+                            a devoloper & designer, currently interning at <Coop href={"https://www.e-butterfly.org/"} target='_blank' rel='noreferrer'>eButterfly</Coop>.
                         </Definition>
                         <Definition>
-                            a Mathematics student at the University of Waterloo minoring in Cognitive Science
+                            a sophomore studying Mathematics at the University of Waterloo.
                         </Definition>
                         <Definition>
                             a student of life, driven by creativity and curiosity.

@@ -225,7 +225,6 @@ class TechnovaPost extends Component {
                             </div>
                         </Paragraph>
                     </Section>
-                    
                 <Footer/>
             </Wrapper>
         )

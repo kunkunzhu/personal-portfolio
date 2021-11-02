@@ -296,6 +296,7 @@ class VoicenotedPost extends Component {
                         </div>
                     </Paragraph>
                 </Section>
+                <Footer/>
             </Wrapper>
         )
     }

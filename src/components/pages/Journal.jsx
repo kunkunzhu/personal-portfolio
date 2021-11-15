@@ -10,6 +10,7 @@ import Bday20Journal from '../journal/journalPosts/Bday20Journal';
 import Reopening1Journal from '../journal/journalPosts/Reopening1Journal';
 import DaylightJournal from '../journal/journalPosts/DaylightJournal';
 import MathIdentityJournal from '../journal/journalPosts/MathIdentityJournal';
+import WinterSurvivalJournal from '../journal/journalPosts/WinterSurvivalJournal';
 
 class Journal extends Component {
     render() {
@@ -25,6 +26,7 @@ class Journal extends Component {
                     <Route path='/journal/reopening1' component={Reopening1Journal}/>
                     <Route path='/journal/daylight' component={DaylightJournal}/>
                     <Route path='/journal/amathematicalidentitycrisis' component={MathIdentityJournal}/>
+                    <Route path='/journal/asurvivalguidefortheseason' component={WinterSurvivalJournal}/>
                 </Switch>
             </Router>
         )

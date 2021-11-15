@@ -65,7 +65,8 @@ class PastimesJournal extends Component {
                     </div>
                 </Body>
                 <FooterBar 
-                previous={JournalInfo['idontwanttobeanyoneelsebutmyselfanymore']}/>
+                previous={JournalInfo['idontwanttobeanyoneelsebutmyselfanymore']}
+                next={JournalInfo['asurvivalguidefortheseason']}/>
             </Wrapper>
         )
     }

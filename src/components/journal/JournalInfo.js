@@ -63,6 +63,14 @@ const posts = {
         path: "/journal/idontwanttobeanyoneelsebutmyselfanymore",
         excerpt: "how I long to re-awaken and come vividly alive to this ordinary and unprecedented life — to the unique array of things that contain meaning to me.",
     },
+    asurvivalguidefortheseason: {
+        key: "asurvivalguidefortheseason",
+        date: "11/05/2021",
+        image: "https://i.ibb.co/wdsyQ2f/winter.jpg",
+        title: "a survival guide for the season.",
+        path: "/journal/asurvivalguidefortheseason",
+        excerpt: "As the invincibility of sunlight fade to unveil the vulnerability of the cold, the change in the season comes as a reminder for a return towards a steadier rhythm and a recultivation of margins.",
+    }
 }
 
 export default posts;

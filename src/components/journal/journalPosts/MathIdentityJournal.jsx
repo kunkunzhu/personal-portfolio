@@ -15,7 +15,7 @@ class MathIdentityJournal extends Component {
                         <div className="date">03/27/2021</div>
                         <small>
                             Initially published on &thinsp;
-                            <a href='https://issuu.com/watiszine/docs/issue_13'>
+                            <a href='https://issuu.com/watiszine/docs/issue_13' target='_blank' rel='noreferrer'>
                             Watiszine.
                             </a>
                         </small>

@@ -40,6 +40,8 @@ class Gallery extends Component{
 
     renderGalleryDisplay = () => {
         const drawings = [
+            'rejection',
+            'well_wishes',
             'quarantine_portraits',
             'daisy_girl',
             'fish_girl',

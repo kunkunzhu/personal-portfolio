@@ -1,13 +1,12 @@
-/* import bottleGirl from '../images/sketchbook/bottleGirl.jpg' */
 import daisyGirl from '../images/sketchbook/daisyGirl.jpg'
-/* import elephants from '../images/elephants.jpg' */
 import fishGirl from '../images/sketchbook/fishGirl.jpg'
 import floralGirl from '../images/sketchbook/floralGirl.jpg'
 import frownyGirl from '../images/sketchbook/frownyGirl.jpg'
-/* import homeee from '../images/homeee.jpg' */
 import sunflowerBoba from '../images/sketchbook/sunflowerBoba.jpg'
 import teaMoon from '../images/sketchbook/teaMoon.jpg'
+import wellWishes from '../images/sketchbook/wellWishes.jpg'
 import quarantinePortraits from '../images/sketchbook/covers/quarantine_portraits.png'
+import rejection from '../images/sketchbook/covers/rejection.png'
 
 const drawings = {
     daisy_girl: {
@@ -58,7 +57,28 @@ const drawings = {
         title: "Quarantine Portraits",
         date: "March 2021",
         pages: "https://www.behance.net/gallery/115589757/Pandemic-Portraits-a-quarantine-project"
+    },
+    rejection: {
+        key: "rejection",
+        image: rejection,
+        title: "aboutrejection",
+        date: "November 2021",
+        pages: "https://itskun.online/journal/beingbelonging"
+    },
+    well_wishes: {
+        key: "well_wishes",
+        image: wellWishes,
+        title: "well wishes.",
+        date: "September 2021",
+        pages: "0"
     }
+    // template: {
+    //     key:
+    //     image:
+    //     title:
+    //     date:
+    //     pages:
+    // }
 }
 
 export default drawings;

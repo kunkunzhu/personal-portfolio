@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom"
 
 const ProjCard = styled.div`
-    height: 400px;
+    height: 475px;
     border: 1px solid rgba(0,0,0,.1);
     width: 100%;
     display: inline-block;

@@ -126,7 +126,8 @@ class WinterSurvivalJournal extends Component {
                     </div>
                 </Body>
                 <FooterBar 
-                previous={JournalInfo['pastimes']}/>
+                previous={JournalInfo['pastimes']}
+                next={JournalInfo['beingbelonging']}/>
             </Wrapper>
         )
     }

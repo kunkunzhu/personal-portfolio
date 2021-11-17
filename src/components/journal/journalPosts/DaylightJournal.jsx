@@ -15,7 +15,7 @@ class DaylightJournal extends Component {
                         <div className="date">02/05/2021</div>
                         <small>
                             Initially published on &thinsp;
-                            <a href='https://www.redpocketmagazine.ca/vol-3/poem/daylight'>
+                            <a href='https://www.redpocketmagazine.ca/vol-3/poem/daylight' target='_blank' rel='noreferrer'>
                             the Red Pocket Magazine.
                             </a>
                         </small>

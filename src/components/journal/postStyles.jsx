@@ -63,7 +63,7 @@ export const Body = styled.div`
     img {
         margin-top: 3rem;
         max-width: 100%;
-        margin-left: 40%;
+        margin-left: 30%;
     }
     hr {
         border-top: 3px dotted var(--font-clr);
@@ -90,6 +90,16 @@ export const Body = styled.div`
         font-style: italic;
         padding-bottom: 1rem;
         letter-spacing: 0.05rem;
+    }
+    a {
+        color: inherit;
+        opacity: 0.7;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: var(--blush);
+        }
     }
 `
 

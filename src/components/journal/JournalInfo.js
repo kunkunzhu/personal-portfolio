@@ -53,7 +53,7 @@ const posts = {
         image: "https://i.ibb.co/2KZjfx9/e4af9a39-5eda-4a99-8a6a-1568d99de602.jpg",
         title: "go where you encounter peace.",
         path: "/journal/pastimes",
-        excerpt: "For a brief moment, I begin to wonder if I have been neglecting what's the most meaningful to me to gather dust on the back shelf of my to-do list instead.",
+        excerpt: "For a brief moment, I begin to wonder if I have been neglecting what's more meaningful to me to gather dust on the back shelf of my to-do list instead.",
     },
     idontwanttobeanyoneelsebutmyselfanymore: {
         key: "idontwanttobeanyoneelsebutmyselfanymore",
@@ -70,6 +70,14 @@ const posts = {
         title: "a survival guide for the season.",
         path: "/journal/asurvivalguidefortheseason",
         excerpt: "As the invincibility of sunlight fade to unveil the vulnerability of the cold, the change in the season comes as a reminder for a return towards a steadier rhythm and a recultivation of margins.",
+    },
+    beingbelonging: {
+        key: "beingbelonging",
+        date: "11/16/2021",
+        image: "https://i.ibb.co/3C1D0X9/portrait.jpg",
+        title: "to be & to belong.",
+        path: "/journal/beingbelonging",
+        excerpt: "I want to stand alongside you and feel empathy pulsing through us. I want to hold space for your story and be left in awe by how wildly different and terrifyingly similar that we are.",
     }
 }
 

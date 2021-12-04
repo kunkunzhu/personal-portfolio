@@ -60,3 +60,19 @@ export const Wrap = styled.div`
     margin: 0;
     background-color: var(--bg-clr);
 `
+
+export const Resume = styled.a`
+    opacity: 0.7;
+    font-family: var(--txt-font);
+    color: var(--txt-clr);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    background: white;
+    :hover {   
+        opacity: 0.5;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: var(--rain);
+    }
+`

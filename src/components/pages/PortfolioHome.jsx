@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
-import { Wrap, Intro, Text, Hello } from './PortfolioStyle'
+import { Wrap, Intro, Text, Hello, Resume } from './PortfolioStyle'
 import Footer from '../Footer';
 import Projects from '../Projects'
 import Typist from 'react-typist';
@@ -45,6 +45,9 @@ class PortfolioHome extends Component{
                         technology & empathy.
                     </Text>
                 </Intro>
+                <Resume href={'https://drive.google.com/file/d/1oC_g0TETDlrmVohAp4LWxYebllsa4fwP/view?usp=sharing'} target='_blank' rel='noreferrer'>
+                    resume.
+                </Resume>
                 <Projects/>
                 <Footer/>
             </Wrap>

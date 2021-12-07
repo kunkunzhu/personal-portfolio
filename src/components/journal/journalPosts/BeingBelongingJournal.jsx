@@ -158,6 +158,7 @@ class BeingBelongingJournal extends Component {
                     </div>
                 </Body>
                 <FooterBar 
+                next={JournalInfo['founddocumentary']}
                 previous={JournalInfo['asurvivalguidefortheseason']}/>
             </Wrapper>
         )

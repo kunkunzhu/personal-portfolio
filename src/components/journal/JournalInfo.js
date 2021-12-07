@@ -78,6 +78,14 @@ const posts = {
         title: "to be & to belong.",
         path: "/journal/beingbelonging",
         excerpt: "I want to stand alongside you and feel empathy pulsing through us. I want to hold space for your story and be left in awe by how wildly different and terrifyingly similar that we are.",
+    },
+    founddocumentary: {
+        key: "founddocumentary",
+        date: "12/3/2021",
+        image: "https://i.ibb.co/dLX8SCg/20200512232240.jpg",
+        title: "[found]",
+        path: "/journal/founddocumentary",
+        excerpt: "'When you are listening to other people's stories, I think you can understand a lot of things [...] that you never know you would understand before.'"
     }
 }
 

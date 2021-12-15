@@ -19,14 +19,15 @@ class BeingBelongingJournal extends Component {
                     <div className="paragraph">
                     Some years ago I stumbled across a quote on Pinterest, <i>I hate people generally, 
                     but I like people individually.</i> Judging by the multitude of times it showed up 
-                    on my feed, a decent number of people must have resonated with it on some level. 
-                    I found the juxtaposition contained within the phrase to be amusing, yet an opposite 
-                    sentiment from what is being described resonated with me. I am resonably  the idea of 
-                    human beings — on its general term. but I find myself harboring some kind of bitterness 
-                    towards individuals more often than I prefer to admit.
+                    on my feed, a decent number of people must have resonated with it to some degree. 
+                    I found the juxtaposition to be amusing, yet an opposite sentiment resonated with me instead. 
+                    I am resonably fascinated by the idea of human beings — on its broad term. but I find 
+                    myself harboring some kind of bitterness towards individuals more than I prefer to admit.
+                    In the words of <a href="https://www.sarahwilson.com/" target='_blank' rel='noreferrer'>Sarah Wilson</a>
+                    , <i>"I love humanity, I just find real-life human hard."</i>
                     </div>
                     <div className="paragraph">
-                    If I am being honest, perhaps I'm often more delighted by the concept of human beings 
+                    In truth, I'm often more delighted by the concept of human beings 
                     than by their close-up and tactile details. An excerpt stood out to me from a 
                     <a href='https://ava.substack.com/p/writing-as-autonomy' target='_blank' rel='noreferrer'> newsletter </a>
                     that I recently subscribed to. <i>"The only thing that did and does feel real to me is people 
@@ -41,9 +42,9 @@ class BeingBelongingJournal extends Component {
                     </div>
                     <div className="paragraph">
                     At the same time, I often felt weary from social interactions . For most of my adolescence, 
-                    I have been so hindered by my insecurities that I could barely see past it and perceive what 
-                    truly matters. At heart I enjoyed meeting new people but social anxiety was a more overpowering 
-                    force. The fear of being judged and dismissed spilled over into quietness and shyness — a facet 
+                    I have been so hindered by my insecurities that I could barely see past it to perceive what 
+                    actually matters. At heart I enjoyed meeting new people but social anxiety often felt like a more 
+                    overpowering force. The fear of being judged and dismissed spilled over into quietness and shyness — a facet 
                     of my persona I never wanted to take ownership of because it spoke so intimately to my vulnerability. 
                     </div>
                     <div className="paragraph">
@@ -56,9 +57,9 @@ class BeingBelongingJournal extends Component {
                     </div>
                     <div className="paragraph">
                     In Present over Perfect, Shauna Niequist described how she felt as though she was perceiving 
-                    everything through a lens of rejection. "When anyone opens their mouth to say anything at all, 
-                    all I could hear is you are not good enough," she writes, precisely describing what resonates 
-                    with me at an awkwardly private level. You are not good enough — everything became its echo. 
+                    everything through a lens of rejection. <i>"When anyone opens their mouth to say anything at all, 
+                    all I could hear is you are not good enough,"</i> she writes, precisely describing what resonates 
+                    with me at an awkwardly private level. <i>You are not good enough</i> — everything became its echo. 
                     I did not dare second guessing because it felt like something unquestionable encoded into my 
                     narrative. Shame was my default and every interaction became a reinforcement of a belief that 
                     was never true. 
@@ -82,9 +83,9 @@ class BeingBelongingJournal extends Component {
                     </div>
                     <div className="paragraph">
                     Still all of a sudden I wanted to run the other way, letting the familar wave of shame 
-                    wash over myself, believing once again that see — I was right about it after all. I do 
+                    wash over myself, believing once again that <i>see — I was right about it after all. I do 
                     not deserve to belong so intimately with another. If I never allow myself to draw near 
-                    then I do not have to experience the inevitable disappointment of it all. 
+                    then I do not have to experience the inevitable disappointment of it all. </i>
                     </div>
                     <div className="paragraph">
                     In the wake of it I wonder — How do I dismantle these walls that I have sought safety 
@@ -96,7 +97,8 @@ class BeingBelongingJournal extends Component {
                     <div className="paragraph">
                     Gradually in the past year, these long-held tensions began to dissolve. I no longer 
                     feel as fearful in conversations and appear to be much more at ease with my own skin. 
-                    The nervousness in my breath started to subside. All of it unfolded like a sprout that 
+                    The nervousness in my breath started to subside. My desire to be among others finally 
+                    surpassing my fear of rejection.All of it unfolded like a sprout that 
                     has been struggling to bloom. On a seemingly ordinary spring day, sunlight permeated 
                     in and at last, the blossom emerges — like a long-awaited epiphany. 
                     </div>
@@ -116,7 +118,7 @@ class BeingBelongingJournal extends Component {
                     </div>
                     <img src="https://i.ibb.co/X2ZVDqS/03.png" alt="rejection 02"/>
                     <div className="paragraph">
-                    I have believed that the reason this desperation to belong resided within me is because 
+                    I have believed that the reason this desperation to belong resided so vividly within me is because 
                     of an inherent inadequacy that I carried. I thought that this ache must have meant that 
                     I was broken — but it only meant that I am human, wired for connection and belonging. 
                     At the end of the day, with all shiny persona and saturated timelines aside, we are all 
@@ -125,7 +127,7 @@ class BeingBelongingJournal extends Component {
                     All of us, together in our solitude.
                     </div>
                     <div className="paragraph">
-                    Another thing to mention is that on occasions I continue to feel a lingering disappointment 
+                    Another thing to mention is that, on occasions, I continue to feel a lingering disappointment 
                     for every abruptly ended conversation and carry around small inklings of grief for each 
                     acquaintance that I have lost in touch with. People are constantly coming and going. 
                     The silhouettes that knit the landscape around us are in a state of constant motion and 
@@ -135,11 +137,11 @@ class BeingBelongingJournal extends Component {
                     Perhaps the disappointment that I experience is defined in equal magnitude by my expectation, 
                     from where I begin to view another person as a means to an end instead of as an end to 
                     themselves. I wish to instead send a <a href="https://kunleidoscopic.wordpress.com/2020/06/13/a-love-letter-to-the-passengers/"
-                    target='_blank' rel='noreferrer'>love letter to the passengers </a>— Despite the ephemerality 
-                    of our interaction and the ambiguous depth of our bond, I am grateful that at one moment in 
-                    time, we had belonged together. And all of this is infathomably bigger than you and I. 
-                    Any fragment of warmth will outlive our temporary interaction and dissolve as an 
-                    escalating ripple. 
+                    target='_blank' rel='noreferrer'>love letter to the passengers </a>— to somehow let them know 
+                    that despite the ephemerality of our interaction and the ambiguous depth of our bond, 
+                    I am grateful that at one moment in time, we had belonged together. And all of this is 
+                    infathomably bigger than you and I. Any fragment of warmth will outlive our temporary 
+                    interaction and dissolve as an escalating ripple. 
                     </div>
                     <div className="paragraph">
                     For now, this is what I know to be true — I desire for nothing more than genuine smiles 
@@ -153,7 +155,7 @@ class BeingBelongingJournal extends Component {
                     </div>
                     <div className="paragraph">
                     I am leaning into the chaos within, so I could see past the projection of my own 
-                    insecurities and release the weight of expectations in order to perceive what truly 
+                    insecurities and release the weight of expectations in order to perceive what actually 
                     matters. And all of this feels like liberation — sincerity at last.
                     </div>
                 </Body>

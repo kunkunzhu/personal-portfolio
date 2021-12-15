@@ -48,7 +48,7 @@ class FoundDocumentaryJournal extends Component {
                     </div>
                     <img src="https://i.ibb.co/34qHFVZ/Group-14.png" alt="documentary moment"/>
                     <div className="paragraph">
-                    Over the past year I have become increasingly curiousity about Asian diaspora. How we originated 
+                    Over the past year I have grown increasingly curious about Asian diaspora. How we originated 
                     from the same place but come to be dispersed across a myriad of different locations — what becomes 
                     of us as we depart from our motherland?
                     </div>

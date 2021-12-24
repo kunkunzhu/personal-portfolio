@@ -150,6 +150,7 @@ class FoundDocumentaryJournal extends Component {
                     </div>
                 </Body>
                 <FooterBar 
+                next={JournalInfo['indigo']}
                 previous={JournalInfo['beingbelonging']}/>
             </Wrapper>
         )

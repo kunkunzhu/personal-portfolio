@@ -86,6 +86,14 @@ const posts = {
         title: "[found]",
         path: "/journal/founddocumentary",
         excerpt: "'When you are listening to other people's stories, I think you can understand a lot of things [...] that you never know you would understand before.'"
+    },
+    indigo: {
+        key: "indigo",
+        date: "12/20/2021",
+        image: "https://i.ibb.co/F33RN7y/20210703233201.jpg",
+        title: "indigo. (a musing on vocation)",
+        path: "/journal/indigo",
+        excerpt: "What if my saturation of indigo only remains as dull, because I am capable of coming alive with unmatched vibrancy and sincerity, in entirely another color instead?"
     }
 }
 

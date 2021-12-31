@@ -82,6 +82,19 @@ class TwentyoneJournal extends Component {
                     more delightful time to reminisce about.
                     </div>
                     <div className='paragraph'>
+                    To my first boyfriend, William, whom I have encountered during this time. Our relationship emerged exactly as I did not anticipate it. 
+                    Thank you for taking all the initiatives at the beginning stage of our relationship or otherwise nothing would have ever happened between us. 
+                    You are the most different person I have probably ever befriended, let alone dated (obviously), yet we share enough similarities that we are 
+                    finishing each other’s sentences and laughing so hard that we run out of breath more than half of the times that we are together. Your openness 
+                    and spontaneous energy brings out a different side of me. As someone with the tendency to define her worth according to her productvity, 
+                    I’ve learned to lean back and be more at ease from being around you. Certainly, I probably would have not embarked on a lot of adventures 
+                    if it were not for you (for example, trying out all the food places in Waterloo, lighting up fireworks on Canada’s Day, taking daytrips to Toronto, 
+                    waking up absurdly early to watch the sunrise eclipse, spending an entire week by ourselves in Niagara Falls, and so much more). This is all to say 
+                    that the venn diagram between us just happens to work out, for which I’m so very grateful for. Thank you for giving me more than I ask for and for 
+                    patiently staying close despite my tendency to pull away whenever I feel upset. Thank you for so much more. You really are the smartest and one 
+                    of the most talented person I know, and I’m not even gassing you up so much as to stating an objective fact.
+                    </div>
+                    <div className='paragraph'>
                     I’m grateful for the extracurricular involvements that I have been a part of. As participation in virtual events began to feel more draining than 
                     stimulating, I stumbled upon the opportunity of joining some student organizations and getting involved in the behind-the-scene process of building 
                     these events. It turned out to be even more rewarding than I had initially expected. So I’m extending gratitude to the individuals that I have worked 

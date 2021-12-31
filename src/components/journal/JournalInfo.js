@@ -94,6 +94,14 @@ const posts = {
         title: "indigo. (a musing on vocation)",
         path: "/journal/indigo",
         excerpt: "What if my saturation of indigo only remains as dull, because I am capable of coming alive with unmatched vibrancy and sincerity, in entirely another color instead?"
+    },
+    twentytwentyone: {
+        key: "twentytwentyone",
+        date: "12/30/2021",
+        image: "https://i.ibb.co/JvwGjh1/IMG-20211225-131616.jpg",
+        path: "/journal/2021",
+        title: "a letter of acknowledgment from 2021.",
+        excerpt: "I’m thankful for all the strength that I have encountered in unexpected places, for each fragment of warmth ever extended to me, for all the courage that I’ve gathered like a bouquet of wildflowers to carry alongside with me for the rest of the journey."
     }
 }
 

@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 class JournalPosts extends Component {
     renderPostCanvases = () => {
         const posts = [
+            'twentytwentyone',
             'indigo',
             'founddocumentary',
             'beingbelonging',

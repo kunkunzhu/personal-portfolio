@@ -14,6 +14,7 @@ import WinterSurvivalJournal from '../journal/journalPosts/WinterSurvivalJournal
 import BeingBelongingJournal from '../journal/journalPosts/BeingBelongingJournal';
 import FoundDocumentaryJournal from '../journal/journalPosts/FoundDocumentaryJournal';
 import IndigoJournal from '../journal/journalPosts/IndigoJournal';
+import TwentyoneJournal from '../journal/journalPosts/TwentyoneJournal';
 
 /* STREAMLINE DIS PROCESS */
 
@@ -35,6 +36,7 @@ class Journal extends Component {
                     <Route path='/journal/beingbelonging' component={BeingBelongingJournal}/>
                     <Route path='/journal/founddocumentary' component={FoundDocumentaryJournal}/>
                     <Route path='/journal/indigo' component={IndigoJournal}/>
+                    <Route path='/journal/2021' component={TwentyoneJournal}/>
                 </Switch>
             </Router>
         )

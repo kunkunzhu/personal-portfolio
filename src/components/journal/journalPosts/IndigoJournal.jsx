@@ -84,6 +84,7 @@ class IndigoJournal extends Component {
                     <img src="https://i.ibb.co/vxxrf1z/indigo-2-4.png" alt="indigo 5"/>
                 </Body>
                 <FooterBar 
+                next={JournalInfo['twentytwentyone']}
                 previous={JournalInfo['founddocumentary']}/>
             </Wrapper>
         )

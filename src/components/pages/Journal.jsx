@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import JournalHome from './JournalHome';
+import ScrollToTop from '../../util/ScrollToTop';
 /* importation of journal posts */
 import PastimesJournal from '../journal/journalPosts/PastimesJournal'
 import IDontWantToBeAnyoneElseJournal from '../journal/journalPosts/IDontWantToBeAnyoneElseJournal'
@@ -22,6 +23,7 @@ class Journal extends Component {
     render() {
         return (
             <Router>
+                <ScrollToTop />
                 <Switch>
                     <Route path='/journal' exact component={JournalHome}/>
                     <Route path='/journal/pastimes' component={PastimesJournal}/>

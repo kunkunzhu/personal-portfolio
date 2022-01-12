@@ -3,15 +3,16 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom"
 
 const ProjCard = styled.div`
-    height: 475px;
-    border: 1px solid rgba(0,0,0,.1);
+    height: 460px;
+    // border: 1px solid rgba(0,0,0,.1);
+    // border-bottom: none;
     width: 100%;
     display: inline-block;
     border-radius: 15px;
     box-sizing: border-box;
     color: var(--txt-clr);
     cursor: pointer;
-    background: white;
+    background: linear-gradient(to bottom, rgb( 255, 255, 255 ), rgb( 255, 255, 255 ), rgba( 255, 255, 255, 0 ));
     &:hover {
         box-shadow: 0 0 10px 5px rgb(165 204 228 / 0.3);
         background: var(--night);

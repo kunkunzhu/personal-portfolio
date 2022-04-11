@@ -34,7 +34,7 @@ class About extends Component {
                             Creative expressions of all forms arouse her curiosity: literature, art, photography, mathematics. 
                             She feel the most at home while <Link href={'https://sincerelykun.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile'} target='_blank' rel='noreferrer'>
                             writing, 
-                            </Link> reading, drawing, and <Link href={'https://open.spotify.com/user/eliinaz.z?si=e8297252e4484e82'} target='_blank' rel='noreferrer'>listening to music.</Link>
+                            </Link> <Link href={'https://curius.app/kun-zhu'} target='_blank' rel='noreferrer'>reading</Link>, drawing, and <Link href={'https://open.spotify.com/user/eliinaz.z?si=e8297252e4484e82'} target='_blank' rel='noreferrer'>listening to music.</Link>
                         </Definition>
                     </Definitions>
                 </Text>

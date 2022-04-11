@@ -20,7 +20,7 @@ export const Header = styled.div`
             color: white;
             margin-top: 25%;
             margin-bottom: 2.5rem;
-            font-family: var(--txt-font);
+            font-family: var(--accent-font);
             -webkit-text-stroke-width: 0.001px;
             -webkit-text-stroke-color: var(--txt-clr);
         }
@@ -114,7 +114,7 @@ const BarWrapper = styled.div`
         font-style: italic;
         padding: 4rem 4rem 2rem 4rem;
         color: var(--blush);
-        font-family: var(--txt-font);
+        font-family: var(--accent-font);
         .path {
             font-size: 1.5rem;
             font-family: inherit;

@@ -37,17 +37,14 @@ class Socials extends Component {
                 <Social href={'https://www.instagram.com/zkunzhu'} target='_blank' rel='noreferrer'>
                     <i className='fab fa-instagram'></i>
                 </Social>
-                <Social href={'https://open.spotify.com/user/eliinaz.z?si=e8297252e4484e82'} target='_blank' rel='noreferrer'>
-                    <i className='fab fa-spotify'></i>
-                </Social>
                 <Social href={'https://www.linkedin.com/in/kun-zhu-05b53a193/'} target='_blank' rel='noreferrer'>
                         <i className='fab fa-linkedin'></i>
                 </Social>
                 <Social href={'https://github.com/kunkunzhu'} target='_blank' rel='noreferrer'>
                     <i className='fab fa-github'></i>
                 </Social>
-                <Social href={'https://branch-celsius-f27.notion.site/Study-Repository-9f179ada5dd34d64815ea99820ad8a4a'} target='_blank' rel='noreferrer'>
-                        <i class="far fa-clipboard"></i>
+                <Social href={'google.com'} target='_blank' rel='noreferrer'>
+                    <i class="fab fa-twitter"></i>
                 </Social>
             </SocialLinks>
         )

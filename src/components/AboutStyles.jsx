@@ -108,7 +108,7 @@ export const Noun = styled.ol`
         padding: 0;
     }
 `
-export const Definitions = styled.ol`
+export const Definitions = styled.div`
     font-family: var(--txt-font);
     margin-left: 25px;
     margin-top: 10px;
@@ -120,7 +120,8 @@ export const Definitions = styled.ol`
     }
 `
 
-export const Definition = styled.li`
+export const Definition = styled.div`
+    margin-top: 1rem;
     color: var(--txt-clr);
     font-size: 18px;
     font-family: var(--txt-font);
@@ -129,7 +130,7 @@ export const Definition = styled.li`
     }
 `
 
-export const Coop = styled.a`
+export const Link = styled.a`
     font-size: 18px;
     font-family: var(--txt-font);
     color: #5285A5;
@@ -141,5 +142,6 @@ export const Coop = styled.a`
         color: var(--rain);
         text-decoration: underline;
         text-decoration-style: wavy;
+        text-decoration-color: var(--blush);
     }
 `

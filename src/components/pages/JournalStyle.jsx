@@ -20,7 +20,7 @@ export const Header = styled.header`
     font-size: 85px;
     .precursor {
         color: #FFFDFA;
-        font-family: var(--txt-font);
+        font-family: var(--accent-font);
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: var(--txt-clr);
     }
@@ -41,7 +41,7 @@ export const Type = styled.div`
         font-size: 60px;
     }
     & span {
-        font-family: var(--txt-font);
+        font-family: var(--accent-font);
     }
 `
 

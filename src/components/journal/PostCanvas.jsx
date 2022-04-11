@@ -41,7 +41,7 @@ export const PostInfo = styled(Link)`
     max-width: calc(100% - 2rem);
     cursor: crosshair;
     .title {
-        font-family: var(--txt-font);
+        font-family: var(--accent-font);
         font-weight: 500;
         font-size: 2rem;
         line-height: 1.8rem;

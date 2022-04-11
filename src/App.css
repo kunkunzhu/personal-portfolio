@@ -8,7 +8,8 @@
 
   /* theme fonts */
   --title-font: 'Crimson Text', serif;
-  --txt-font: 'Fira Code', monospace;
+  --accent-font: 'Fira Code', monospace;
+  --txt-font: 'Anek Tamil', sans-serif;
 }
 
 * {

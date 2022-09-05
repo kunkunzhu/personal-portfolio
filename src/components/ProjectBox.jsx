@@ -4,8 +4,6 @@ import { Link } from "react-router-dom"
 
 const ProjCard = styled.div`
     height: 460px;
-    // border: 1px solid rgba(0,0,0,.1);
-    // border-bottom: none;
     width: 100%;
     display: inline-block;
     border-radius: 15px;
@@ -13,21 +11,21 @@ const ProjCard = styled.div`
     color: var(--txt-clr);
     cursor: pointer;
     background: linear-gradient(to bottom, rgb( 255, 255, 255 ), rgb( 255, 255, 255 ), rgba( 255, 255, 255, 0 ));
-    &:hover {
-        box-shadow: 0 0 10px 5px rgb(165 204 228 / 0.3);
-        background: var(--night);
-        color: white;
-        transition: 0.2s ease-out; 
-        .image {
-            padding-top: 40%;
-            transition: 0.2s ease-out; 
-            overflow: visible;
-        }
-        .linkSection {
-            visibility: visible;
-            transition: 0.4s ease-out; 
-        }
-    }
+    // &:hover {
+    //     box-shadow: 0 0 10px 5px rgb(165 204 228 / 0.3);
+    //     background: var(--night);
+    //     color: white;
+    //     transition: 0.2s ease-out; 
+    //     .image {
+    //         padding-top: 40%;
+    //         transition: 0.2s ease-out; 
+    //         overflow: visible;
+    //     }
+    //     .linkSection {
+    //         visibility: visible;
+    //         transition: 0.4s ease-out; 
+    //     }
+    // }
 `
 
 
@@ -58,7 +56,6 @@ const ProjInfo = styled.div`
         display: flex;
         height: 1.5rem;
         flex-direction: row;
-        visibility: hidden;
         justify-content: space-between;
         font-family: var(--txt-font);
         .categories {
@@ -128,9 +125,9 @@ class ProjectBox extends Component {
                 </div>
                 <ProjText>{this.props.project.description}</ProjText>
                 <div className="linkSection">
-                    <span className="categories">
+                    {/* <span className="categories">
                         /{this.props.project.categories}/
-                    </span>
+                    </span> */}
                     <Link to={this.props.project.path} style={{fontFamily: "var(--txt-font)"}}>
                         <button className="link">
                             {this.props.project.prompt}

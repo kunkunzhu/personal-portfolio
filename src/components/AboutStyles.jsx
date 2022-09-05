@@ -14,26 +14,28 @@ export const AboutWrapper = styled.div`
     }
 
 `
-export const Image = styled.div`
-    width: 260px;
-    height: 360px;
+
+// image dimension: 220x310
+export const Image = styled.div` 
+    width: 216px; 
+    height: 299px;
     background: url(${beforePic});
-    background-size: 260px 360px;
+    background-size: 216px 299px;
     display: inline-block;
     &:hover {
         opacity: 90%;
         transition: 0.6s ease-out; 
         background: url(${afterPic});
-        background-size: 260px 360px;
+        background-size: 216px 299px;
         box-shadow: 10px 10px 0px var(--rain);
     }
     @media (max-width: 960px) {
-        width: 234px;
-        height: 324px;
-        background-size: 234px 324px;
+        width: 180px; 
+        height: 250px;
+        background-size: 180px 250px;
         transition: 0.4s ease-out;
         &:hover {
-            background-size: 234px 324px;
+            background-size: 180px 250px;
         }
     }
 `
@@ -41,7 +43,7 @@ export const Text = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    width: 480px;
+    width: 460px;
     margin-left: 40px;
     padding: 20px;
     @media (max-width: 960px) {
@@ -54,8 +56,9 @@ export const Text = styled.div`
 export const Name = styled.div`
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
     @media (max-width: 960px) {
-        margin-left: 20px;
+        margin-left: 40px;
         flex-direction: column;
     }
 `
@@ -79,8 +82,8 @@ export const EngName = styled.header`
 
 export const ChiName = styled.header`
     opacity: 60%;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
     font-size: 2rem;
     letter-spacing: 0.2rem;
     color: var(--blush);

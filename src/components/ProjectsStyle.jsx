@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Masonry = styled.div`
-    width: 80vw;
+    width: 70vw;
     display: grid;
     margin-right: auto;
     margin-left: auto;

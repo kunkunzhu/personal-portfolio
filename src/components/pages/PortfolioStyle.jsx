@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import Brand from '../../images/Portfolio.png'
+import foreground from '../../images/Portfolio0.png'
+import background from '../../images/Portfolio1.png'
 
 export const Hello = styled.header`
     color: var(--txt-clr);
@@ -38,18 +39,18 @@ export const Text = styled.div`
     }
 `
 
-export const Intro = styled.div`
-    height: 500px;   
-    background: url(${Brand});
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 1100px;
-    width: 100%;
-    @media (max-width: 700px) {
-        background-size: 800px;
-        transition: 0.2s ease-out;
-    }
-`
+// export const Intro = styled.div`
+//     height: 500px;   
+//     background: url(${Brand});
+//     background-repeat: no-repeat;
+//     background-position: top;
+//     background-size: 1100px;
+//     width: 100%;
+//     @media (max-width: 700px) {
+//         background-size: 800px;
+//         transition: 0.2s ease-out;
+//     }
+// `
 export const Wrap = styled.div`
     scroll-behavior: smooth;
     width: 100%;
@@ -75,4 +76,27 @@ export const Resume = styled.a`
         text-decoration-style: wavy;
         text-decoration-color: var(--rain);
     }
+`
+
+export const Background = styled.div`
+    background: url(${background});
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    width: 50%;
+    margin: auto;
+    margin-left: 450px;
+    margin-top: -1430px;
+    z-index: 1;
+`
+
+export const Foreground = styled.div`
+    background: url(${foreground});
+    height: 1200px;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    width: 50%;
+    margin: auto;
+    margin-top: 250px;
+    z-index: 99;
 `

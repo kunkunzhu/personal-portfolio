@@ -27,8 +27,6 @@ class About extends Component {
                             Kun is a second year student at the University of Waterloo, <Link href={'https://branch-celsius-f27.notion.site/Study-Repository-9f179ada5dd34d64815ea99820ad8a4a'} target='_blank' rel='noreferrer'>
                             studying
                             </Link> Statistics / Combinatorics & Optimization with a minor in Cognitive Science.
-                            <br/>
-                            She is an aspiring designer/developer delighted by the intersection between technology & empathy.
                         </Definition>
                         <Definition>
                             Creative expressions of all forms arouse her curiosity: literature, art, photography, mathematics. 

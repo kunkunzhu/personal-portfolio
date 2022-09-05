@@ -43,7 +43,7 @@ class Socials extends Component {
                 <Social href={'https://github.com/kunkunzhu'} target='_blank' rel='noreferrer'>
                     <i className='fab fa-github'></i>
                 </Social>
-                <Social href={'google.com'} target='_blank' rel='noreferrer'>
+                <Social href={'https://twitter.com/kunleidoscopic'} target='_blank' rel='noreferrer'>
                     <i class="fab fa-twitter"></i>
                 </Social>
             </SocialLinks>

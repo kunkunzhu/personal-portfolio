@@ -11,18 +11,21 @@ export const Wrapper = styled.div`
 export const Header = styled.header`
     display: flex;
     text-align: left;
-    flex-direction: column;
-    position: relative;
-    left: -200px;
+    flex-direction: row;
     padding: 5rem;
     margin-bottom: 5rem;
     font-weight: 1200;
     font-size: 85px;
-    .precursor {
-        color: #FFFDFA;
-        font-family: var(--accent-font);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--txt-clr);
+    justify-content: space-between;
+    .text {
+        .precursor {
+            color: #FFFDFA;
+            font-family: var(--accent-font);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--txt-clr);
+        }
+        position: relative;
+        left: -200px;
     }
     @media (max-width: 1200px) {
         font-weight: normal;

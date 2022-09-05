@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import { Wrap, Background, Foreground } from './PortfolioStyle';
 import Footer from '../Footer';
 import Projects from '../Projects';

@@ -3,46 +3,40 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom"
 
 const ProjCard = styled.div`
-    height: 460px;
+    border: 1px solid var(--night);
     width: 100%;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
     color: var(--txt-clr);
     cursor: pointer;
     background: linear-gradient(to bottom, rgb( 255, 255, 255 ), rgb( 255, 255, 255 ), rgba( 255, 255, 255, 0 ));
-    // &:hover {
-    //     box-shadow: 0 0 10px 5px rgb(165 204 228 / 0.3);
-    //     background: var(--night);
-    //     color: white;
-    //     transition: 0.2s ease-out; 
-    //     .image {
-    //         padding-top: 40%;
-    //         transition: 0.2s ease-out; 
-    //         overflow: visible;
-    //     }
-    //     .linkSection {
-    //         visibility: visible;
-    //         transition: 0.4s ease-out; 
-    //     }
-    // }
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 5px rgb(165 204 228 / 0.3);
+        background: var(--night);
+        color: white;
+        transition: 0.3s ease-out; 
+        .linkSection {
+            visibility: visible;
+            transition: 0.4s ease-out; 
+        }
+        .image {
+            opacity: 1;
+        }
+    }
 `
 
 
 const ProjInfo = styled.div`
-    padding: 1rem 1.5rem;
+    padding: 0rem 1rem 2.5rem 1rem;
     cursor: default;
     .header {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 0.8rem;
-        flex-direction: column;
-        align-items: flex-start;
     }
     .title {
         text-transform: lowercase;
         font-size: 2.2rem;  
-        letter-spacing: 0.1rem;
         font-weight: 600;
     }
     .subtitle{
@@ -52,51 +46,44 @@ const ProjInfo = styled.div`
         font-weight: 600px;
         opacity: 0.75;
     }
-    .linkSection {
-        display: flex;
-        height: 1.5rem;
-        flex-direction: row;
-        justify-content: space-between;
-        font-family: var(--txt-font);
-        .categories {
-            font-family: inherit;
-            margin-top: 2rem;
-            padding: 0.5rem;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            opacity: 0.5;
-        }
-        .link {
-            cursor: crosshair;
-            margin-top: 1.75rem;
-            flex: 0 0 auto;
-            align-self: flex-start;
-            border-radius: 20px;
-            border: 1px solid var(--blush);
-            padding: 0.5rem;
-            text-decoration: none;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            background: inherit;
-            color: var(--blush);
-            text-decoration: none;
-            font-family: inherit;
-            font-size: 1.1rem;
-            &:hover {
-                color: white;
-                background: var(--blush);
-                border: none; 
-                box-shadow: 0 0 15px 0 var(--rain);
-                transition: 0.1s ease-out; 
-            }
+`
+
+const ProjHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--txt-font);
+    .link {
+        cursor: crosshair;
+        margin-top: 1rem;
+        flex: 0 0 auto;
+        align-self: flex-start;
+        border-radius: 20px;
+        border: 1px solid var(--blush);
+        padding: 0.5rem;
+        text-decoration: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background: inherit;
+        color: var(--blush);
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 1.1rem;
+        &:hover {
+            color: white;
+            background: var(--blush);
+            border: none; 
+            box-shadow: 0 0 15px 0 var(--rain);
+            transition: 0.1s ease-out; 
         }
     }
 `
+
 const ProjText = styled.div`
     font-family: var(--txt-font);
     position: relative;
-    height: 1.5rem;
-    overflow: collapse;
+    height: 1rem;
+    font-size: 14px;
 `
 
 const ProjImage = styled.div`
@@ -106,10 +93,11 @@ const ProjImage = styled.div`
     background-position: 40% 40%;
     background-size: 100%;
     background-repeat: no-repeat;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-image: url(${(props) => props.image});
     cursor: crosshair;
+    opacity: 0.75;
 `
 
 class ProjectBox extends Component {
@@ -117,23 +105,25 @@ class ProjectBox extends Component {
     renderProjText = () => {
         return (
             <ProjInfo>
-                <div className="header">
-                    <div className="title">{this.props.project.title}</div>
-                    <div className="subtitle">
-                        {this.props.project.subtitle}
+                <ProjHeader>
+                    <div className="header">
+                        <div className="title">{this.props.project.title}</div>
+                        <div className="subtitle">
+                            {this.props.project.subtitle}
+                        </div>
                     </div>
-                </div>
+                    <div>
+                        <Link to={this.props.project.path} style={{fontFamily: "var(--txt-font)"}}>
+                            <button className="link">
+                                {this.props.project.prompt}
+                            </button>
+                        </Link>
+                    </div>
+                </ProjHeader>
                 <ProjText>{this.props.project.description}</ProjText>
-                <div className="linkSection">
                     {/* <span className="categories">
                         /{this.props.project.categories}/
                     </span> */}
-                    <Link to={this.props.project.path} style={{fontFamily: "var(--txt-font)"}}>
-                        <button className="link">
-                            {this.props.project.prompt}
-                        </button>
-                    </Link>
-                </div>
             </ProjInfo>
         )
     }

@@ -3,7 +3,7 @@ import Footer from '../Footer';
 import Typist from 'react-typist';
 import { Wrapper, Header, Type } from './JournalStyle'
 import JournalPosts from '../journal/JournalPosts';
-
+import { Button } from 'react-bootstrap'
 
 const TextLoop = () => {
     const[mounted, setMounted] = useState(true);
@@ -39,13 +39,18 @@ const TextLoop = () => {
         );
     }
 
-const Landing = () => {
+const Landing = (props) => {
     return (
         <Header>
+            <div className='text'>
                 <div className="precursor">
                     I write to &nbsp;
                 </div>
                 <TextLoop/>
+            </div>
+            <Button
+            // onClick={props.changeView("gallery")
+            >change view</Button>
         </Header>
     )
 }
@@ -53,11 +58,29 @@ const Landing = () => {
 
 class JournalHome extends Component{
 
+    constructor() {
+        super();
+        this.state = {
+            view: "list",
+        }
+        this.changeView = this.changeView.bind(this);
+    }
+
+    changeView = (selectedView) => {
+        this.setState({
+            view: selectedView
+        });
+    }
+
     render() {
         return (
             <Wrapper>
-                <Landing/>
-                <JournalPosts/>
+                <Landing
+                //  changeView={this.changeView}
+                 />
+                <JournalPosts 
+                // view={this.view}
+                />
                 <Footer/>
             </Wrapper>
         )

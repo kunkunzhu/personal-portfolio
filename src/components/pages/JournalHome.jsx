@@ -1,9 +1,8 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../Footer'; 
 import Typist from 'react-typist';
 import { Wrapper, Header, Type } from './JournalStyle'
 import JournalPosts from '../journal/JournalPosts';
-import { Button } from 'react-bootstrap'
 
 const TextLoop = () => {
     const[mounted, setMounted] = useState(true);
@@ -40,6 +39,7 @@ const TextLoop = () => {
     }
 
 const Landing = (props) => {
+
     return (
         <Header>
             <div className='text'>
@@ -48,43 +48,35 @@ const Landing = (props) => {
                 </div>
                 <TextLoop/>
             </div>
-            <Button
-            // onClick={props.changeView("gallery")
-            >change view</Button>
+            { props.curView === "list" ?
+                <button onClick={props.changeView}>
+                    change to gallery
+                </button>
+                :
+                <button onClick={props.changeView}>
+                change to list
+            </button>
+            }
         </Header>
     )
 }
 
 
-class JournalHome extends Component{
+function JournalHome(){
 
-    constructor() {
-        super();
-        this.state = {
-            view: "list",
-        }
-        this.changeView = this.changeView.bind(this);
+    const [view, setView] = useState("list");
+
+    const changeView = () => {
+        (view === "list") ? setView("gallery") : setView("list")
     }
 
-    changeView = (selectedView) => {
-        this.setState({
-            view: selectedView
-        });
-    }
-
-    render() {
-        return (
-            <Wrapper>
-                <Landing
-                //  changeView={this.changeView}
-                 />
-                <JournalPosts 
-                // view={this.view}
-                />
-                <Footer/>
-            </Wrapper>
-        )
-    }
+    return (
+        <Wrapper>
+            <Landing changeView={changeView} curView={view} />
+            <JournalPosts view={view} />
+            <Footer/>
+        </Wrapper>
+    )
 }
 
 export default JournalHome

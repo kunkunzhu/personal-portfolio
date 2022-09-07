@@ -43,7 +43,7 @@ export const PostInfo = styled(Link)`
     .title {
         font-family: var(--accent-font);
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 1.8rem;
         margin-bottom: 0.4rem;
     }
@@ -51,36 +51,48 @@ export const PostInfo = styled(Link)`
         font-size: 0.8rem;
         line-height: 0.8rem;
         max-width: calc(100% - 3.5rem);
+        // make it conditional based on the size of the background image ...
     }
+    @media (max-width: 992px) and (min-width: 768px) { 
+        .title {
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+        }
+        .excerpt {
+            visibility: hidden;
+        }
+    } 
 `
 
-class PostCanvas extends Component {
+export function PostCanvas(props) {
 
-    renderPostText = () => {
+    const renderPostText = () => {
         return (
-            <PostInfo className="text" to={this.props.post.path}>
+            <PostInfo className="text" to={props.post.path}>
                 <h1 className="title">
-                    {this.props.post.title}
+                    {props.post.title}
                 </h1>
                 <small className="date">
-                    {this.props.post.date}
+                    {props.post.date}
                 </small>
                 <div className="excerpt">
-                    {this.props.post.excerpt}
+                    {props.post.excerpt}
                 </div>
             </PostInfo>
         )
     }
 
-    render() {
-        return (
-            <PostCard>
-                {this.renderPostText()}
-                <div className="overlay"></div>
-                <PostImage src={this.props.post.image}/>
-            </PostCard>
-        )
-    }
+    return (
+        <PostCard>
+            {renderPostText()}
+            <div className="overlay"></div>
+            <PostImage src={props.post.image}/>
+        </PostCard>
+    )
 }
 
-export default PostCanvas
+export function PostItem(){
+    return (
+        <div>Hello World</div>
+    )
+}

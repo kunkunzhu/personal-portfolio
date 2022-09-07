@@ -2,42 +2,42 @@ import styled from 'styled-components'
 import foreground from '../../images/Portfolio0.png'
 import background from '../../images/Portfolio1.png'
 
-export const Hello = styled.header`
-    color: var(--txt-clr);
-    opacity: 75%;
-    text-align: center;
-    font-size: 2.6rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    margin-top: 210px;
-    background-color: transparent;
-    @media (max-width: 700px) {
-        font-size: 1.75rem;
-        position: absolute;
-        top: 0;
-        left: 220px;
-        transition: 0.2s ease-out;
-    }
-`
+// export const Hello = styled.header`
+//     color: var(--txt-clr);
+//     opacity: 75%;
+//     text-align: center;
+//     font-size: 2.6rem;
+//     font-weight: 600;
+//     letter-spacing: 0.05rem;
+//     margin-top: 210px;
+//     background-color: transparent;
+//     @media (max-width: 700px) {
+//         font-size: 1.75rem;
+//         position: absolute;
+//         top: 0;
+//         left: 220px;
+//         transition: 0.2s ease-out;
+//     }
+// `
 
-export const Text = styled.div`
-    font-family: 'Fira Code', monospace;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--txt-clr);
-    margin-top: 25px;
-    margin-left: 300px;
-    font-size: 1rem;
-    @media (max-width: 700px) {
-        font-size: 0.8rem;
-        margin-left: 240px;
-        margin-top: 200px;
-        transition: 0.2s ease-out;
-    }
-`
+// export const Text = styled.div`
+//     font-family: 'Fira Code', monospace;
+//     background: transparent;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     color: var(--txt-clr);
+//     margin-top: 25px;
+//     margin-left: 300px;
+//     font-size: 1rem;
+//     @media (max-width: 700px) {
+//         font-size: 0.8rem;
+//         margin-left: 240px;
+//         margin-top: 200px;
+//         transition: 0.2s ease-out;
+//     }
+// `
 
 // export const Intro = styled.div`
 //     height: 500px;   
@@ -88,6 +88,23 @@ export const Background = styled.div`
     margin-left: 450px;
     margin-top: -1430px;
     z-index: 1;
+    overflow: hidden;
+    @media (max-width: 992px) and (min-width: 768px) {
+        margin-left: 300px;
+        transition: 0.5s ease-out;
+    }
+    @media (max-width: 768px) and (min-width: 600px) {
+        background-size: 300px;
+        margin-left: 150px;
+        margin-top: -1400px;
+        transition: 0.5s ease-out;
+    }
+    @media (max-width: 600px) {
+        transition: 0.5s ease-out;
+        background-size: 250px;
+        margin-left: 120px;
+        margin-top: -1350px;
+    }
 `
 
 export const Foreground = styled.div`
@@ -99,4 +116,13 @@ export const Foreground = styled.div`
     margin: auto;
     margin-top: 250px;
     z-index: 99;
+    overflow: hidden;
+    @media (max-width: 768px) and (min-width: 600px) {
+        background-size: 400px;
+        transition: 0.5s ease-out;
+    }
+    @media (max-width: 600px) {
+        background-size: 300px;
+        transition: 0.5s ease-out;
+    }
 `

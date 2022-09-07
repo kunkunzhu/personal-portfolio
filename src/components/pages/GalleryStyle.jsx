@@ -1,4 +1,4 @@
-import { Modal, Tabs } from 'react-bootstrap'
+import { Tabs } from 'react-bootstrap'
 import styled, { keyframes } from 'styled-components'
 
 /* landing header style */
@@ -199,7 +199,7 @@ export const Image = styled.img`
     10px 12px 0px 2px var(--blush);
 `
 
-export const ModalCard = styled(Modal)`
+export const ModalCard = styled.div`
     position: fixed;
     top: 0;
     left: 0;

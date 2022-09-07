@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Masonry } from '../pages/JournalStyle'
+import { Masonry, List } from '../pages/JournalStyle'
 import JournalInfo from './JournalInfo'
-import PostCanvas from './PostCanvas'
+import { PostCanvas, PostItem } from './PostCanvas'
 
 const Wrapper = styled.div`
     margin: auto;
@@ -11,8 +11,8 @@ const Wrapper = styled.div`
     padding-left: 1rem;
 `
 
-class JournalPosts extends Component {
-    renderPostCanvases = () => {
+const JournalPosts = (props) => {
+    const renderPostCanvases = (view) => {
         const posts = [
             'twentytwentyone',
             'indigo',
@@ -29,24 +29,37 @@ class JournalPosts extends Component {
             'amathematicalidentitycrisis',
         ]
         let postsArray = []
-        for(let i = 0; i < posts.length; i++) {
-            const post = JournalInfo[posts[i]]
-            postsArray.push(
-                <PostCanvas post={post}/>
-            )
+        if (view === "gallery") {
+            posts.map(postName => {
+                const post = JournalInfo[postName]
+                postsArray.push(
+                    <PostCanvas post={post}/>
+                )
+            })
+        } else {
+            posts.map(postName => {
+                const post = JournalInfo[postName]
+                postsArray.push(
+                    <PostItem post={post}/>
+                )
+            })
         }
         return postsArray
     }
     
-    render () {
-        return (
-            <Wrapper>
+    return (
+        <Wrapper>
+            { props.view === "gallery" ?
                 <Masonry>
-                    {this.renderPostCanvases()}
+                    {renderPostCanvases("gallery")}
                 </Masonry>
-            </Wrapper>
-        )
-    }
+                :
+                <List>
+                   {renderPostCanvases("list")} 
+                </List>
+            }
+        </Wrapper>
+    )
 }
 
 

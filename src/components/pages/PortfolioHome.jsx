@@ -30,8 +30,7 @@ import Projects from '../Projects';
 //         </Hello>
 //     );
 // }
-
-
+  
 class PortfolioHome extends Component{
     render() {
         return (

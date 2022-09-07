@@ -6,13 +6,16 @@ import ProjectBox from './ProjectBox'
 
 const Wrapper = styled.div`
     margin: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     width: 100%;
     align-items: center;
     padding-right: 20px;
     padding-left: 20px;
-    @media (max-width: 750px) {
-        margin-top: -200px;
+    @media (max-width: 750px) and (min-width: 600px) {
+        margin-top: -250px;
+    }
+    @media (max-width: 600px) {
+        margin-top: -350px;
     }
 `
 

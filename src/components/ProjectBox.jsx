@@ -25,6 +25,9 @@ const ProjCard = styled.div`
             opacity: 1;
         }
     }
+    @media (min-width: 768px) and (max-width: 992px) {
+        color: red;
+    }
 `
 
 
@@ -45,6 +48,17 @@ const ProjInfo = styled.div`
         font-style: bold;
         font-weight: 600px;
         opacity: 0.75;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+        .title {
+            font-size: 1.5rem; 
+        }
+        .subtitle {
+            font-size: 0.7rem;
+        }
+        .header {
+            margin-bottom: 0.4rem;
+        }
     }
 `
 
@@ -77,6 +91,13 @@ const ProjHeader = styled.div`
             transition: 0.1s ease-out; 
         }
     }
+    @media (min-width: 768px) and (max-width: 992px) {
+        .link {
+            margin-top: 0.4rem;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+        }
+    }
 `
 
 const ProjText = styled.div`
@@ -84,6 +105,10 @@ const ProjText = styled.div`
     position: relative;
     height: 1rem;
     font-size: 14px;
+    @media (min-width: 768px) and (max-width: 992px) {
+        font-size: 12px;
+        height: 0.5rem;
+    }
 `
 
 const ProjImage = styled.div`

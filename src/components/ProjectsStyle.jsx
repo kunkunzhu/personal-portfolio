@@ -11,7 +11,7 @@ export const Masonry = styled.div`
     grid-column-gap: 1.5rem;
     grid-row-gap: 3rem;
     padding: 0;
-    @media (max-width: 800px) {
+    @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
     }

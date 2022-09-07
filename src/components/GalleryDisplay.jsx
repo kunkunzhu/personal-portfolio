@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal } from 'react-bootstrap'
+// import { Modal } from 'react-bootstrap' -> figure out how modal works!
 import { 
     DrawingCard, 
     Drawing, 
@@ -20,6 +20,7 @@ class GalleryDisplay extends Component {
 
     showModal = () => {
         this.setState({ show: true });
+        console.log("show");
     };
 
     hideModal = () => {
@@ -45,22 +46,23 @@ class GalleryDisplay extends Component {
                     </div>
                     <Drawing src={this.props.drawing.image}/> 
                 </DrawingCard>
-                <ModalCard 
-                show={this.state.show} 
-                onClick={this.hideModal} 
-                onHide={this.hideModal}
-                centered={true}>
-                    <Modal.Body>
-                        <Image src={this.props.drawing.image} alt={this.props.drawing.title}/>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Modal.Title className="title">
-                            <Modal.Title className="title">
-                                {this.props.drawing.title} ({this.props.drawing.date})
-                            </Modal.Title>
-                        </Modal.Title>
-                    </Modal.Footer>
+                { this.show &&
+                    <ModalCard 
+                    onClick={this.hideModal} 
+                    onHide={this.hideModal}
+                    centered={true}>
+                        <div>
+                            <Image src={this.props.drawing.image} alt={this.props.drawing.title}/>
+                        </div>
+                        <div>
+                            <div className="title">
+                                <div className="title">
+                                    {this.props.drawing.title} ({this.props.drawing.date})
+                                </div>
+                            </div>
+                        </div>
                     </ModalCard>
+                }
                 </>
             )
         }

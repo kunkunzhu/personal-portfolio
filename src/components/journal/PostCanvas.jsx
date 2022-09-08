@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
@@ -64,14 +64,57 @@ export const PostInfo = styled(Link)`
     } 
 `
 
+export const PostTitle = styled.h1`
+    font-family: var(--accent-font);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.4rem;
+`
+
+export const PostRow = styled(Link)`
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--txt-clr);
+    padding: 5px 15px 5px 15px;
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .date {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+    }
+    .excerpt {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        padding: 5px 40% 15px 0px;
+        opacity: 0.4;
+    }
+    hr {
+        border: 0;
+        border-top: 1px solid var(--rain);
+    }
+    &: hover {
+        background-color: var(--night);
+        color: var(--bg-clr);
+        transition: 0.4s ease-in-out;
+        .excerpt {
+            opacity: 0.8;
+        }
+    }
+`
+
 export function PostCanvas(props) {
 
     const renderPostText = () => {
         return (
             <PostInfo className="text" to={props.post.path}>
-                <h1 className="title">
+                <PostTitle>
                     {props.post.title}
-                </h1>
+                </PostTitle>
                 <small className="date">
                     {props.post.date}
                 </small>
@@ -91,8 +134,31 @@ export function PostCanvas(props) {
     )
 }
 
-export function PostItem(){
+export function PostItem(props){
+
+    const renderPostText = () => {
+        return (
+            <PostRow  to={props.post.path}>
+                <div className='info'>
+                    <PostTitle>
+                        {props.post.title}
+                    </PostTitle>
+                    <PostTitle className='date'>
+                        {props.post.date}
+                    </PostTitle>
+                </div>
+                <div className='excerpt'>
+                    {props.post.excerpt}
+                </div>
+                <hr/>
+            </PostRow>
+        )
+    }
+
+
     return (
-        <div>Hello World</div>
+        <div>
+            {renderPostText()}
+        </div>
     )
 }

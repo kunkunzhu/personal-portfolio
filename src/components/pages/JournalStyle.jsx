@@ -28,25 +28,39 @@ export const Header = styled.header`
         position: relative;
         left: -200px;
     }
-    button {
-        cursor: crosshair;
-        margin-top: 1rem;
-        flex: 0 0 auto;
-        align-self: flex-start;
-        border-radius: 20px;
-        border: 1px solid var(--blush);
-        padding: 0.5rem;
-        text-decoration: none;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        background: inherit;
-        color: var(--blush);
-        text-decoration: none;
-        font-size: 1.1rem;
-        &:hover {
-            color: white;
-            background: var(--blush);
-            transition: 0.1s ease-out; 
+    .options {
+        display: flex;
+        flex-direction: column;
+        ul {
+            margin-top: 5rem;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: row; 
+            list-style: none;
+            li {
+                padding-left: 1rem;
+            }
+        }
+        button {
+            cursor: crosshair;
+            margin-top: 1rem;
+            flex: 0 0 auto;
+            align-self: flex-start;
+            border-radius: 20px;
+            border: 1px solid var(--blush);
+            padding: 0.5rem;
+            text-decoration: none;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background: inherit;
+            color: var(--blush);
+            text-decoration: none;
+            font-size: 1.1rem;
+            &:hover {
+                color: white;
+                background: var(--blush);
+                transition: 0.1s ease-out; 
+            }
         }
     }
     @media (max-width: 1200px) {
@@ -101,4 +115,7 @@ export const Masonry = styled.div`
         column-count: 1;
     }
 `
-export const List = styled.div``
+export const List = styled.div`
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+`

@@ -24,7 +24,7 @@ class About extends Component {
                     {/* <Noun>Noun</Noun> */}
                     <Definitions>
                         <Definition>
-                            Kun is a second year student at the University of Waterloo, <Link href={'https://branch-celsius-f27.notion.site/Study-Repository-9f179ada5dd34d64815ea99820ad8a4a'} target='_blank' rel='noreferrer'>
+                            Kun is a third year student at the University of Waterloo, <Link href={'https://branch-celsius-f27.notion.site/Study-Repository-9f179ada5dd34d64815ea99820ad8a4a'} target='_blank' rel='noreferrer'>
                             studying
                             </Link> Statistics / Combinatorics & Optimization with a minor in Cognitive Science.
                         </Definition>

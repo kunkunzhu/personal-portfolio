@@ -89,6 +89,7 @@ export const Background = styled.div`
     margin-top: -1430px;
     z-index: 1;
     overflow: hidden;
+    opacity: 0.8;
     @media (max-width: 992px) and (min-width: 768px) {
         margin-left: 300px;
         transition: 0.5s ease-out;
@@ -117,6 +118,7 @@ export const Foreground = styled.div`
     margin-top: 250px;
     z-index: 99;
     overflow: hidden;
+    opacity: 0.9;
     @media (max-width: 768px) and (min-width: 600px) {
         background-size: 400px;
         transition: 0.5s ease-out;

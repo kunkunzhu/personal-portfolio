@@ -48,15 +48,21 @@ const Landing = (props) => {
                 </div>
                 <TextLoop/>
             </div>
-            { props.curView === "list" ?
-                <button onClick={props.changeView}>
-                    change to gallery
-                </button>
+            <div className='options'>
+                { props.curView === "list" ?
+                    <button onClick={props.changeView}>
+                        change to gallery
+                    </button>
                 :
-                <button onClick={props.changeView}>
-                change to list
-            </button>
-            }
+                    <button onClick={props.changeView}>
+                        change to list
+                    </button>
+                }
+                <ul>
+                    <li>2020</li>
+                    <li>2021</li>
+                </ul>
+            </div>
         </Header>
     )
 }

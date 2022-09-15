@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Masonry, List } from '../pages/JournalStyle'
 import JournalInfo from './JournalInfo'
@@ -30,19 +30,17 @@ const JournalPosts = (props) => {
         ]
         let postsArray = []
         if (view === "gallery") {
-            posts.map(postName => {
-                const post = JournalInfo[postName]
+            posts.map(postName => (
                 postsArray.push(
-                    <PostCanvas post={post}/>
+                    <PostCanvas post={JournalInfo[postName]}/>
                 )
-            })
+            ))
         } else {
-            posts.map(postName => {
-                const post = JournalInfo[postName]
+            posts.map(postName => (
                 postsArray.push(
-                    <PostItem post={post}/>
+                    <PostItem post={JournalInfo[postName]}/>
                 )
-            })
+            ))
         }
         return postsArray
     }

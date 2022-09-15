@@ -58,7 +58,6 @@ export const Name = styled.div`
     flex-direction: row;
     margin-left: 20px;
     @media (max-width: 960px) {
-        margin-left: 40px;
         flex-direction: column;
     }
 `
@@ -118,8 +117,8 @@ export const Definitions = styled.div`
     @media (max-width: 960px) {
         letter-spacing: -0.02rem;
         margin-top: 15px;
-        margin-left: 25px;
-        width: 220px;
+        margin-left: 5px;
+        width: 235px;
     }
 `
 

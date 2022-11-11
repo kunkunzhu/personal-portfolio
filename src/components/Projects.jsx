@@ -21,7 +21,7 @@ const Wrapper = styled.div`
 
 class Projects extends Component {
     renderProjectCells = () => {
-        const projects = ['voicenoted', 'technova21', 'mood']
+        const projects = ['mood','voicenoted', 'technova21',]
         let projectArray = []
         for(let i = 0; i < projects.length; i++) {
             const project = ProjectsInfo[projects[i]]
